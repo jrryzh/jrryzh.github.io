@@ -20,25 +20,30 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
 
 <script class="next-config" data-name="main" type="application/json">{&quot;hostname&quot;:&quot;jrryzh.github.io&quot;,&quot;root&quot;:&quot;&#x2F;&quot;,&quot;images&quot;:&quot;&#x2F;images&quot;,&quot;scheme&quot;:&quot;Gemini&quot;,&quot;version&quot;:&quot;8.4.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:false,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;搜索...&quot;,&quot;empty&quot;:&quot;没有找到任何搜索结果：${query}&quot;,&quot;hits_time&quot;:&quot;找到 ${hits} 个搜索结果（用时 ${time} 毫秒）&quot;,&quot;hits&quot;:&quot;找到 ${hits} 个搜索结果&quot;}}</script>
-<meta name="description" content="记录学习与生活">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Jerry&#39;s Blog">
-<meta property="og:url" content="https://jrryzh.github.io/archives/2021/05/index.html">
+<meta name="description" content="初学spark，整理一点pyspark的概念。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="pyspark">
+<meta property="og:url" content="https://jrryzh.github.io/2021/05/19/pyspark/index.html">
 <meta property="og:site_name" content="Jerry&#39;s Blog">
-<meta property="og:description" content="记录学习与生活">
+<meta property="og:description" content="初学spark，整理一点pyspark的概念。">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://codingdict.com/static/assets/tutorials/bigdata/pyspark/sparkcontext.jpg">
+<meta property="article:published_time" content="2021-05-19T05:52:10.000Z">
+<meta property="article:modified_time" content="2021-05-19T06:14:29.220Z">
 <meta property="article:author" content="Jrryzh">
+<meta property="article:tag" content="分布式系统">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://codingdict.com/static/assets/tutorials/bigdata/pyspark/sparkcontext.jpg">
 
 
-<link rel="canonical" href="https://jrryzh.github.io/archives/2021/05/">
+<link rel="canonical" href="https://jrryzh.github.io/2021/05/19/pyspark/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:false,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;comments&quot;:&quot;&quot;,&quot;permalink&quot;:&quot;&quot;,&quot;path&quot;:&quot;archives&#x2F;2021&#x2F;05&#x2F;index.html&quot;,&quot;title&quot;:&quot;&quot;}</script>
+<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;comments&quot;:true,&quot;permalink&quot;:&quot;https:&#x2F;&#x2F;jrryzh.github.io&#x2F;2021&#x2F;05&#x2F;19&#x2F;pyspark&#x2F;&quot;,&quot;path&quot;:&quot;2021&#x2F;05&#x2F;19&#x2F;pyspark&#x2F;&quot;,&quot;title&quot;:&quot;pyspark&quot;}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">&quot;&quot;</script>
-<title>归档 | Jerry's Blog</title><script src="/js/config.js"></script>
+<title>pyspark | Jerry's Blog</title><script src="/js/config.js"></script>
   
 
 
@@ -105,7 +110,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -118,6 +123,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#SparkContext"><span class="nav-number">1.</span> <span class="nav-text">SparkContext</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RDD"><span class="nav-number">2.</span> <span class="nav-text">RDD</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -178,189 +184,129 @@
 </noscript>
 
 
-    <div class="main-inner archive posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
-  
-  
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 8 篇日志。 继续努力。</span>
-      </div>
 
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://jrryzh.github.io/2021/05/19/pyspark/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Jrryzh">
+      <meta itemprop="description" content="记录学习与生活">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jerry's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          pyspark
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2021</span>
+
+      <time title="创建时间：2021-05-19 13:52:10 / 修改时间：14:14:29" itemprop="dateCreated datePublished" datetime="2021-05-19T13:52:10+08:00">2021-05-19</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/articles/" itemprop="url" rel="index"><span itemprop="name">articles</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>初学spark，整理一点pyspark的概念。</p>
+<span id="more"></span>
+
+<h3 id="SparkContext"><a href="#SparkContext" class="headerlink" title="SparkContext"></a>SparkContext</h3><p>SparkContext是任何spark功能的入口点。当我们运行任何Spark应用程序时，启动一个驱动程序，它具有main函数，并在此处启动SparkContext。然后，驱动程序在工作节点上的执行程序内运行操作。</p>
+<p><img src="https://codingdict.com/static/assets/tutorials/bigdata/pyspark/sparkcontext.jpg" alt="SparkContext"></p>
+<p>任何PySpark程序的前两行如下所示</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pyspark <span class="keyword">import</span> SparkContext</span><br><span class="line">sc = SparkContext(<span class="string">&quot;local&quot;</span>, <span class="string">&quot;First App&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>SparkContext参数包括：</p>
+<ul>
+<li><strong>Master</strong> - 它是连接到的集群的URL。</li>
+<li><strong>appName</strong> - 您的工作名称。</li>
+<li><strong>sparkHome</strong> - Spark安装目录。</li>
+<li><strong>pyFiles</strong> - 要发送到集群并添加到PYTHONPATH的.zip或.py文件。</li>
+<li><strong>environment</strong> - 工作节点环境变量。</li>
+<li><strong>batchSize</strong> - 表示为单个Java对象的Python对象的数量。 设置1以禁用批处理，设置0以根据对象大小自动选择批处理大小，或设置为-1以使用无限批处理大小。</li>
+<li><strong>serializer</strong> - RDD序列化器。</li>
+<li><strong>Conf</strong> - L {SparkConf}的一个对象，用于设置所有Spark属性。</li>
+<li><strong>gateway</strong> - 使用现有网关和JVM，否则初始化新JVM。</li>
+<li><strong>JSC</strong> - JavaSparkContext实例。</li>
+<li><strong>profiler_cls</strong> - 用于进行性能分析的一类自定义Profiler（默认为pyspark.profiler.BasicProfiler）。</li>
+</ul>
+<h3 id="RDD"><a href="#RDD" class="headerlink" title="RDD"></a><a target="_blank" rel="noopener" href="https://codingdict.com/article/8883">RDD</a></h3><ol>
+<li>RDD代表 <strong>Resilient Distributed Dataset</strong>，它们是在多个节点上运行和操作以在集群上进行并行处理的元素。<ol>
+<li>不可变元素，创建后无法进行修改</li>
+<li>有容错能力，发生故障时会自动回复</li>
+</ol>
+</li>
+<li>主要操作<ol>
+<li>Transformation：应用于RDD以创建新的RDD。 Filter，groupBy和map是转换的例子。</li>
+<li>Action：指示Spark执行计算并将结果发送回驱动程序。</li>
+</ol>
+</li>
+</ol>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-05-19T13:52:10+08:00"
-              content="2021-05-19">
-          05-19
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/05/19/pyspark/" itemprop="url">
-            <span itemprop="name">pyspark</span>
-          </a>
-      </div>
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/" rel="tag"><i class="fa fa-tag"></i> 分布式系统</a>
+          </div>
 
-      
-    </header>
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/05/18/hadoop/" rel="prev" title="hadoop关系简介">
+                  <i class="fa fa-chevron-left"></i> hadoop关系简介
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
   </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-05-18T22:47:31+08:00"
-              content="2021-05-18">
-          05-18
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/05/18/hadoop/" itemprop="url">
-            <span itemprop="name">hadoop关系简介</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-05-18T21:38:47+08:00"
-              content="2021-05-18">
-          05-18
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/05/18/2021-5-18/" itemprop="url">
-            <span itemprop="name">每日goal！</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-05-18T21:29:29+08:00"
-              content="2021-05-18">
-          05-18
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/05/18/tf-idf/" itemprop="url">
-            <span itemprop="name">tf_idf算法初步总结</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-05-17T21:24:44+08:00"
-              content="2021-05-17">
-          05-17
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/05/17/GNN/" itemprop="url">
-            <span itemprop="name">GNN算法初步总结</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-05-15T18:33:00+08:00"
-              content="2021-05-15">
-          05-15
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/05/15/EM/" itemprop="url">
-            <span itemprop="name">高斯混合模型和EM算法初步总结</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-05-11T21:44:27+08:00"
-              content="2021-05-11">
-          05-11
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/05/11/2021-5-11/" itemprop="url">
-            <span itemprop="name">Eason太好听了</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-05-10T19:52:24+08:00"
-              content="2021-05-10">
-          05-10
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/05/10/hello-world/" itemprop="url">
-            <span itemprop="name">Hello World</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
+</div>
 
 
-    </div>
-  </div>
-  
-  
-  
+
+
+
 <script src="/js/comments.js"></script>
 </div>
   </main>
