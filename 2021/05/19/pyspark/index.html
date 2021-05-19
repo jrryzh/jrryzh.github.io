@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://codingdict.com/static/assets/tutorials/bigdata/pyspark/sparkcontext.jpg">
 <meta property="article:published_time" content="2021-05-19T05:52:10.000Z">
-<meta property="article:modified_time" content="2021-05-19T06:14:29.220Z">
+<meta property="article:modified_time" content="2021-05-19T11:30:06.068Z">
 <meta property="article:author" content="Jrryzh">
 <meta property="article:tag" content="分布式系统">
 <meta name="twitter:card" content="summary">
@@ -123,7 +123,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#SparkContext"><span class="nav-number">1.</span> <span class="nav-text">SparkContext</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RDD"><span class="nav-number">2.</span> <span class="nav-text">RDD</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#SparkContext"><span class="nav-number">1.</span> <span class="nav-text">SparkContext</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B3%A8%E6%84%8F%EF%BC%9A%E5%8C%BA%E5%88%86%E5%87%A0%E4%B8%AA%E6%A6%82%E5%BF%B5"><span class="nav-number">1.1.</span> <span class="nav-text">注意：区分几个概念</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RDD"><span class="nav-number">2.</span> <span class="nav-text">RDD</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Broadcast-and-Accumulator"><span class="nav-number">3.</span> <span class="nav-text">Broadcast and Accumulator</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -220,7 +220,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2021-05-19 13:52:10 / 修改时间：14:14:29" itemprop="dateCreated datePublished" datetime="2021-05-19T13:52:10+08:00">2021-05-19</time>
+      <time title="创建时间：2021-05-19 13:52:10 / 修改时间：19:30:06" itemprop="dateCreated datePublished" datetime="2021-05-19T13:52:10+08:00">2021-05-19</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -245,6 +245,7 @@
         <p>初学spark，整理一点pyspark的概念。</p>
 <span id="more"></span>
 
+<p>贴一个pyspark.sql.Dataframe的<a target="_blank" rel="noopener" href="https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.sql.DataFrame.html">官方说明文档</a>，很多实用操作。</p>
 <h3 id="SparkContext"><a href="#SparkContext" class="headerlink" title="SparkContext"></a>SparkContext</h3><p>SparkContext是任何spark功能的入口点。当我们运行任何Spark应用程序时，启动一个驱动程序，它具有main函数，并在此处启动SparkContext。然后，驱动程序在工作节点上的执行程序内运行操作。</p>
 <p><img src="https://codingdict.com/static/assets/tutorials/bigdata/pyspark/sparkcontext.jpg" alt="SparkContext"></p>
 <p>任何PySpark程序的前两行如下所示</p>
@@ -264,6 +265,12 @@
 <li><strong>JSC</strong> - JavaSparkContext实例。</li>
 <li><strong>profiler_cls</strong> - 用于进行性能分析的一类自定义Profiler（默认为pyspark.profiler.BasicProfiler）。</li>
 </ul>
+<h4 id="注意：区分几个概念"><a href="#注意：区分几个概念" class="headerlink" title="注意：区分几个概念"></a>注意：区分几个概念</h4><ul>
+<li><strong>SparkContext</strong> is the entry gate of Apache Spark functionality and the most important step of any Spark driver application is to generate SparkContext which represents the connection to a Spark cluster, and can be used to create RDDs, accumulators and broadcast variables on that cluster.</li>
+<li><strong>SparkSession</strong> is an entry point to underlying PySpark functionality in order to programmatically create PySpark RDD, DataFrame.</li>
+<li><strong>SQLContext</strong> can be used create DataFrame , register DataFrame as tables, execute SQL over tables, cache tables, and read parquet files whereas SparkContext is backing this SQLContext. The SparkSession around which this SQLContext wraps.</li>
+<li><strong>SparkConf</strong> offers configurations to run a Spark application on the local/cluster by supporting few configurations and parameters.</li>
+</ul>
 <h3 id="RDD"><a href="#RDD" class="headerlink" title="RDD"></a><a target="_blank" rel="noopener" href="https://codingdict.com/article/8883">RDD</a></h3><ol>
 <li>RDD代表 <strong>Resilient Distributed Dataset</strong>，它们是在多个节点上运行和操作以在集群上进行并行处理的元素。<ol>
 <li>不可变元素，创建后无法进行修改</li>
@@ -276,7 +283,7 @@
 </ol>
 </li>
 </ol>
-
+<h3 id="Broadcast-and-Accumulator"><a href="#Broadcast-and-Accumulator" class="headerlink" title="Broadcast and Accumulator"></a>Broadcast and Accumulator</h3>
     </div>
 
     
