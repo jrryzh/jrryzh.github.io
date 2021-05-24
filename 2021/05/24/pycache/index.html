@@ -20,25 +20,29 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
 
 <script class="next-config" data-name="main" type="application/json">{&quot;hostname&quot;:&quot;jrryzh.github.io&quot;,&quot;root&quot;:&quot;&#x2F;&quot;,&quot;images&quot;:&quot;&#x2F;images&quot;,&quot;scheme&quot;:&quot;Gemini&quot;,&quot;version&quot;:&quot;8.4.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:false,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;搜索...&quot;,&quot;empty&quot;:&quot;没有找到任何搜索结果：${query}&quot;,&quot;hits_time&quot;:&quot;找到 ${hits} 个搜索结果（用时 ${time} 毫秒）&quot;,&quot;hits&quot;:&quot;找到 ${hits} 个搜索结果&quot;}}</script>
-<meta name="description" content="记录学习与生活">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Jerry&#39;s Blog">
-<meta property="og:url" content="https://jrryzh.github.io/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/index.html">
+<meta name="description" content="在编写django项目中遇到__pycache__文件夹,对其进行理解记录。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="__pycache__文件夹理解">
+<meta property="og:url" content="https://jrryzh.github.io/2021/05/24/pycache/index.html">
 <meta property="og:site_name" content="Jerry&#39;s Blog">
-<meta property="og:description" content="记录学习与生活">
+<meta property="og:description" content="在编写django项目中遇到__pycache__文件夹,对其进行理解记录。">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-05-24T14:15:48.000Z">
+<meta property="article:modified_time" content="2021-05-24T14:20:17.690Z">
 <meta property="article:author" content="Jrryzh">
+<meta property="article:tag" content="系统知识">
+<meta property="article:tag" content="知识点">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://jrryzh.github.io/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/">
+<link rel="canonical" href="https://jrryzh.github.io/2021/05/24/pycache/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:false,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;comments&quot;:&quot;&quot;,&quot;permalink&quot;:&quot;&quot;,&quot;path&quot;:&quot;tags&#x2F;可视化&#x2F;index.html&quot;,&quot;title&quot;:&quot;&quot;}</script>
+<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;comments&quot;:true,&quot;permalink&quot;:&quot;https:&#x2F;&#x2F;jrryzh.github.io&#x2F;2021&#x2F;05&#x2F;24&#x2F;pycache&#x2F;&quot;,&quot;path&quot;:&quot;2021&#x2F;05&#x2F;24&#x2F;pycache&#x2F;&quot;,&quot;title&quot;:&quot;__pycache__文件夹理解&quot;}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">&quot;&quot;</script>
-<title>标签: 可视化 | Jerry's Blog</title><script src="/js/config.js"></script>
+<title>__pycache__文件夹理解 | Jerry's Blog</title><script src="/js/config.js"></script>
   
 
 
@@ -178,70 +182,109 @@
 </noscript>
 
 
-    <div class="main-inner tag posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
-  
-  
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <h2 class="collection-header">可视化
-          <small>标签</small>
-        </h2>
-      </div>
 
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://jrryzh.github.io/2021/05/24/pycache/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Jrryzh">
+      <meta itemprop="description" content="记录学习与生活">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jerry's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          __pycache__文件夹理解
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2021</span>
+
+      <time title="创建时间：2021-05-24 22:15:48 / 修改时间：22:20:17" itemprop="dateCreated datePublished" datetime="2021-05-24T22:15:48+08:00">2021-05-24</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/articles/" itemprop="url" rel="index"><span itemprop="name">articles</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>在编写django项目中遇到__pycache__文件夹,对其进行理解记录。</p>
+<span id="more"></span>
+
+<p>先直接在stackoverflow粘一个（笑）读起来麻烦但起来省事。</p>
+<p>“””</p>
+<p>当您在python中运行程序时，解释器首先将其编译为字节码（这过于简化），并将其存储在<code>__pycache__</code>文件夹中。如果您在其中查看，则会在项目文件夹中找到一堆共享.py文件名的文件，只是它们的扩展名是.pyc或.pyo。它们分别是程序文件的字节码编译版本和优化的字节码编译版本。</p>
+<p>作为程序员，您基本上可以忽略它……它所做的只是使您的程序启动更快。当您的脚本更改时，它们将被重新编译，并且如果您删除文件或整个文件夹并再次运行您的程序，它们将重新出现（除非您明确禁止这种行为）。</p>
+<p>当您将代码发送给其他人时，通常的做法是删除该文件夹，但是是否执行此操作并不重要。使用版本控制（<code>git</code>）时，此文件夹通常列在忽略文件（<code>.gitignore</code>）中，因此不包括在内。</p>
+<p>如果您使用的是cpython（这是最常见的实现，因为它是参考实现），并且您不希望使用该文件夹，则可以通过使用-B标志启动解释器来取消显示该文件夹。</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -B foo.py</span><br></pre></td></tr></table></figure>
+
+<p>正如tcaswell指出的，另一种选择是将环境变量设置<code>PYTHONDONTWRITEBYTECODE</code>为任何值（根据python的手册页，任何“非空字符串”）。</p>
+<p>“””</p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-05-24T19:05:56+08:00"
-              content="2021-05-24">
-          05-24
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/05/24/django/" itemprop="url">
-            <span itemprop="name">django初学总结</span>
-          </a>
-      </div>
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86/" rel="tag"><i class="fa fa-tag"></i> 系统知识</a>
+              <a href="/tags/%E7%9F%A5%E8%AF%86%E7%82%B9/" rel="tag"><i class="fa fa-tag"></i> 知识点</a>
+          </div>
 
-      
-    </header>
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/05/24/django/" rel="prev" title="django初学总结">
+                  <i class="fa fa-chevron-left"></i> django初学总结
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
   </article>
+</div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-05-22T21:12:38+08:00"
-              content="2021-05-22">
-          05-22
-        </time>
-      </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/05/22/flask/" itemprop="url">
-            <span itemprop="name">flask初学总结</span>
-          </a>
-      </div>
 
-      
-    </header>
-  </article>
 
-    </div>
-  </div>
-  
-  
-  
+
 <script src="/js/comments.js"></script>
 </div>
   </main>
