@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="next-config" data-name="main" type="application/json">{&quot;hostname&quot;:&quot;jrryzh.github.io&quot;,&quot;root&quot;:&quot;&#x2F;&quot;,&quot;images&quot;:&quot;&#x2F;images&quot;,&quot;scheme&quot;:&quot;Gemini&quot;,&quot;version&quot;:&quot;8.4.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:false,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;搜索...&quot;,&quot;empty&quot;:&quot;没有找到任何搜索结果：${query}&quot;,&quot;hits_time&quot;:&quot;找到 ${hits} 个搜索结果（用时 ${time} 毫秒）&quot;,&quot;hits&quot;:&quot;找到 ${hits} 个搜索结果&quot;}}</script>
+<meta name="description" content="激动人心的时刻来了，孩子又学django了。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="djange">
+<meta property="og:url" content="https://jrryzh.github.io/2021/05/24/djange/index.html">
+<meta property="og:site_name" content="Jerry&#39;s Blog">
+<meta property="og:description" content="激动人心的时刻来了，孩子又学django了。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-05-24T11:05:56.000Z">
+<meta property="article:modified_time" content="2021-05-24T12:47:57.696Z">
+<meta property="article:author" content="Jrryzh">
+<meta property="article:tag" content="前端">
+<meta property="article:tag" content="可视化">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://jrryzh.github.io/2021/05/24/djange/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;comments&quot;:true,&quot;permalink&quot;:&quot;https:&#x2F;&#x2F;jrryzh.github.io&#x2F;2021&#x2F;05&#x2F;24&#x2F;djange&#x2F;&quot;,&quot;path&quot;:&quot;2021&#x2F;05&#x2F;24&#x2F;djange&#x2F;&quot;,&quot;title&quot;:&quot;djange&quot;}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">&quot;&quot;</script>
+<title>djange | Jerry's Blog</title><script src="/js/config.js"></script>
+  
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Jerry's Blog</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-articles"><a href="/categories/articles" rel="section"><i class="fa fa-newspaper fa-fw"></i>文章</a></li>
+        <li class="menu-item menu-item-thinkings"><a href="/categories/thinkings" rel="section"><i class="fa fa-lightbulb fa-fw"></i>日常感想</a></li>
+        <li class="menu-item menu-item-gallery"><a href="/categories/gallery/" rel="section"><i class="fa fa-images fa-fw"></i>照片</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#PART-1-%E8%AF%B7%E6%B1%82%E4%B8%8E%E5%93%8D%E5%BA%94"><span class="nav-number">1.</span> <span class="nav-text">PART 1 请求与响应</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89django%E6%96%87%E4%BB%B6%E6%A1%86%E6%9E%B6"><span class="nav-number">1.0.1.</span> <span class="nav-text">（一）django文件框架</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E5%88%9B%E5%BB%BAAPP"><span class="nav-number">1.0.2.</span> <span class="nav-text">（二）创建APP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E7%BC%96%E5%86%99%E8%A7%86%E5%9B%BE"><span class="nav-number">1.0.3.</span> <span class="nav-text">（三）编写视图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E5%9B%9B%EF%BC%89path%EF%BC%88%EF%BC%89%E6%96%B9%E6%B3%95"><span class="nav-number">1.0.4.</span> <span class="nav-text">（四）path（）方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#route"><span class="nav-number">1.0.5.</span> <span class="nav-text">route</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#view"><span class="nav-number">1.0.6.</span> <span class="nav-text">view</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#kwargs"><span class="nav-number">1.0.7.</span> <span class="nav-text">kwargs</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#name"><span class="nav-number">1.0.8.</span> <span class="nav-text">name</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#PART-2-%E6%A8%A1%E5%9E%8B%E4%B8%8E%E5%90%8E%E5%8F%B0"><span class="nav-number">2.</span> <span class="nav-text">PART 2 模型与后台</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E6%95%B0%E6%8D%AE%E5%BA%93%E9%85%8D%E7%BD%AE"><span class="nav-number">2.0.1.</span> <span class="nav-text">（一）数据库配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E5%88%9B%E5%BB%BA%E6%A8%A1%E5%9E%8B"><span class="nav-number">2.0.2.</span> <span class="nav-text">（二）创建模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E5%90%AF%E7%94%A8%E6%A8%A1%E5%9E%8B"><span class="nav-number">2.0.3.</span> <span class="nav-text">（三）启用模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E5%9B%9B%EF%BC%89%E4%BD%93%E9%AA%8C%E6%A8%A1%E5%9E%8B%E8%87%AA%E5%B8%A6%E7%9A%84API"><span class="nav-number">2.0.4.</span> <span class="nav-text">（四）体验模型自带的API</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%BA%94%EF%BC%89admin%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%AB%99%E7%82%B9"><span class="nav-number">2.0.5.</span> <span class="nav-text">（五）admin后台管理站点</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E5%88%9B%E5%BB%BA%E7%AE%A1%E7%90%86%E5%91%98%E7%94%A8%E6%88%B7"><span class="nav-number">2.0.5.1.</span> <span class="nav-text">1. 创建管理员用户</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-%E5%90%AF%E5%8A%A8%E5%BC%80%E5%8F%91%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="nav-number">2.0.5.2.</span> <span class="nav-text">2. 启动开发服务器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-%E8%BF%9B%E5%85%A5%E7%AB%99%E7%82%B9"><span class="nav-number">2.0.5.3.</span> <span class="nav-text">3. 进入站点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-%E6%B3%A8%E5%86%8C%E6%8A%95%E7%A5%A8%E5%BA%94%E7%94%A8"><span class="nav-number">2.0.5.4.</span> <span class="nav-text">4. 注册投票应用</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Part-3%EF%BC%9A%E8%A7%86%E5%9B%BE%E5%92%8C%E6%A8%A1%E6%9D%BF"><span class="nav-number">3.</span> <span class="nav-text">Part 3：视图和模板</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Jrryzh</p>
+  <div class="site-description" itemprop="description">记录学习与生活</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="mailto:18300180036@fudan.edu.cn" title="E-Mail → mailto:18300180036@fudan.edu.cn" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="返回顶部">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+
+  <a href="https://github.com/jrryzh" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://jrryzh.github.io/2021/05/24/djange/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Jrryzh">
+      <meta itemprop="description" content="记录学习与生活">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jerry's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          djange
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2021-05-24 19:05:56 / 修改时间：20:47:57" itemprop="dateCreated datePublished" datetime="2021-05-24T19:05:56+08:00">2021-05-24</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/articles/" itemprop="url" rel="index"><span itemprop="name">articles</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>激动人心的时刻来了，孩子又学django了。</p>
+<span id="more"></span>
+
+<h1 id="PART-1-请求与响应"><a href="#PART-1-请求与响应" class="headerlink" title="PART 1 请求与响应"></a>PART 1 请求与响应</h1><h3 id="（一）django文件框架"><a href="#（一）django文件框架" class="headerlink" title="（一）django文件框架"></a>（一）django文件框架</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">mysite/</span><br><span class="line">    manage.py</span><br><span class="line">    mysite/</span><br><span class="line">        __init__.py</span><br><span class="line">        settings.py</span><br><span class="line">        urls.py</span><br><span class="line">        asgi.py</span><br><span class="line">        wsgi.py</span><br></pre></td></tr></table></figure>
+
+<p>各文件和目录解释：</p>
+<ul>
+<li>外层的<code>mysite/</code>目录与Django无关，只是你项目的容器，可以任意重命名。</li>
+<li><code>manage.py</code>：一个命令行工具，管理Django的交互脚本。</li>
+<li>内层的<code>mysite/</code>目录是真正的项目文件包裹目录，它的名字是你引用内部文件的Python包名，例如：<code>mysite.urls</code>。</li>
+<li><code>mysite/__init__.py</code>:一个定义包的空文件。</li>
+<li><code>mysite/settings.py</code>:项目的配置文件。</li>
+<li><code>mysite/urls.py</code>:路由文件，所有的任务都是从这里开始分配，相当于Django驱动站点的目录。</li>
+<li><code>mysite/wsgi.py</code>:一个基于WSGI的web服务器进入点，提供底层的网络通信功能，通常不用关心。</li>
+<li><code>mysite/asgi.py</code>：一个基于ASGI的web服务器进入点，提供异步的网络通信功能，通常不用关心。</li>
+</ul>
+<h3 id="（二）创建APP"><a href="#（二）创建APP" class="headerlink" title="（二）创建APP"></a>（二）创建APP</h3><p>在 Django 中，每一个应用（app）都是一个 Python 包，并且遵循着相同的约定。Django 自带一个工具，可以帮你生成应用的基础目录结构。</p>
+<p>app应用与project项目的区别：</p>
+<ul>
+<li>一个app实现某个具体功能，比如博客、公共档案数据库或者简单的投票系统；</li>
+<li>一个project是配置文件和多个app的集合，这些app组合成整个站点；</li>
+<li>一个project可以包含多个app；</li>
+<li>一个app可以属于多个project！</li>
+</ul>
+<p>app的存放位置可以是任何地点，但是通常都将它们放在与<code>manage.py</code>脚本同级的目录下，这样方便导入文件。</p>
+<h3 id="（三）编写视图"><a href="#（三）编写视图" class="headerlink" title="（三）编写视图"></a>（三）编写视图</h3><ol>
+<li><p>Include</p>
+<p>include语法相当于多级路由，它把接收到的url地址去除与此项匹配的部分，将剩下的字符串传递给下一级路由urlconf进行判断。在路由的章节，有更加详细的用法指导。</p>
+<p>include的背后是一种即插即用的思想。项目的根路由不关心具体app的路由策略，只管往指定的二级路由转发，实现了应用解耦。app所属的二级路由可以根据自己的需要随意编写，不会和其它的app路由发生冲突。app目录可以放置在任何位置，而不用修改路由。这是软件设计里很常见的一种模式。</p>
+<p>建议：除了admin路由外，尽量给每个app设计自己独立的二级路由。</p>
+</li>
+</ol>
+<h3 id="（四）path（）方法"><a href="#（四）path（）方法" class="headerlink" title="（四）path（）方法"></a>（四）path（）方法</h3><p>一个路由配置模块就是一个urlpatterns列表，列表的每个元素都是一项path，每一项path都是以path()的形式存在。</p>
+<p>path()方法可以接收4个参数，其中前2个是必须的：<code>route</code>和<code>view</code>，以及2个可选的参数：<code>kwargs</code>和<code>name</code>。</p>
+<h3 id="route"><a href="#route" class="headerlink" title="route"></a>route</h3><h3 id="view"><a href="#view" class="headerlink" title="view"></a>view</h3><h3 id="kwargs"><a href="#kwargs" class="headerlink" title="kwargs"></a>kwargs</h3><h3 id="name"><a href="#name" class="headerlink" title="name"></a>name</h3><h1 id="PART-2-模型与后台"><a href="#PART-2-模型与后台" class="headerlink" title="PART 2 模型与后台"></a>PART 2 模型与后台</h1><h3 id="（一）数据库配置"><a href="#（一）数据库配置" class="headerlink" title="（一）数据库配置"></a>（一）数据库配置</h3><p>默认情况，<code>INSTALLED_APPS</code>中会自动包含下列条目，它们都是Django自动生成的：</p>
+<ul>
+<li>django.contrib.admin：admin管理后台站点</li>
+<li>django.contrib.auth：身份认证系统</li>
+<li>django.contrib.contenttypes：内容类型框架</li>
+<li>django.contrib.sessions：会话框架</li>
+<li>django.contrib.messages：消息框架</li>
+<li>django.contrib.staticfiles：静态文件管理框架</li>
+</ul>
+<h3 id="（二）创建模型"><a href="#（二）创建模型" class="headerlink" title="（二）创建模型"></a>（二）创建模型</h3><ol>
+<li><p>模型本质上就是数据库表的布局，再附加一些元数据。</p>
+</li>
+<li><p>Django通过自定义Python类的形式来定义具体的模型，每个模型的物理存在方式就是一个Python的类Class，每个模型代表数据库中的一张表，每个类的实例代表数据表中的一行数据，类中的每个变量代表数据表中的一列字段。</p>
+</li>
+<li><p>ORM</p>
+</li>
+</ol>
+<h3 id="（三）启用模型"><a href="#（三）启用模型" class="headerlink" title="（三）启用模型"></a>（三）启用模型</h3><ol>
+<li><p>Make migrations</p>
+<p>通过运行<code>makemigrations</code>命令，Django 会检测你对模型文件的修改，也就是告诉Django你对模型有改动，并且你想把这些改动保存为一个“<code>迁移(migration)</code>”。</p>
+<p>migrations<code>是Django保存模型修改记录的文件，这些文件保存在磁盘上。在例子中，它就是</code>polls/migrations/0001_initial.py</p>
+</li>
+<li><p><code>migrate</code>的命令将对数据库执行真正的迁移动作</p>
+<ol>
+<li>migrate命令对所有还未实施的迁移记录进行操作，本质上就是将你对模型的修改体现到数据库中具体的表中。</li>
+<li>Django通过一张叫做<code>django_migrations</code>的表，记录并跟踪已经实施的migrate动作，通过对比获得哪些迁移尚未提交。（请务必牢记这张表的作用和名称）</li>
+</ol>
+</li>
+<li><p><code>sqlmigrate</code>的命令可以展示SQL语句</p>
+</li>
+<li><p><strong>修改模型时的操作分三步</strong>：</p>
+<ul>
+<li>在models.py中修改模型；</li>
+<li>运行<code>python manage.py makemigrations</code>为改动创建迁移记录文件；</li>
+<li>运行<code>python manage.py migrate</code>，将操作同步到数据库。</li>
+</ul>
+</li>
+</ol>
+<h3 id="（四）体验模型自带的API"><a href="#（四）体验模型自带的API" class="headerlink" title="（四）体验模型自带的API"></a>（四）体验模型自带的API</h3><ol>
+<li>调用<code>manage.py</code>参数能将<code>DJANGO_SETTINGS_MODULE</code>环境变量导入，它将自动按照<code>mysite/settings.py</code>中的设置，配置好你的python shell环境，这样，你就可以导入和调用任何你项目内的模块了。</li>
+</ol>
+<h3 id="（五）admin后台管理站点"><a href="#（五）admin后台管理站点" class="headerlink" title="（五）admin后台管理站点"></a>（五）admin后台管理站点</h3><h4 id="1-创建管理员用户"><a href="#1-创建管理员用户" class="headerlink" title="1. 创建管理员用户"></a>1. <strong>创建管理员用户</strong></h4><h4 id="2-启动开发服务器"><a href="#2-启动开发服务器" class="headerlink" title="2. 启动开发服务器"></a>2. 启动开发服务器</h4><h4 id="3-进入站点"><a href="#3-进入站点" class="headerlink" title="3. 进入站点"></a>3. 进入站点</h4><h4 id="4-注册投票应用"><a href="#4-注册投票应用" class="headerlink" title="4. 注册投票应用"></a>4. 注册投票应用</h4><h1 id="Part-3：视图和模板"><a href="#Part-3：视图和模板" class="headerlink" title="Part 3：视图和模板"></a>Part 3：视图和模板</h1><p>在Django中，网页和其它的一些内容都是通过视图来处理的。视图其实就是一个简单的Python函数（在基于类的视图中称为方法）。Django通过对比请求的URL地址来选择对应的视图，也就是路由。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag"><i class="fa fa-tag"></i> 前端</a>
+              <a href="/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/" rel="tag"><i class="fa fa-tag"></i> 可视化</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/05/23/conda-forge/" rel="prev" title="对于 conda install -c conda-forge xx 的理解">
+                  <i class="fa fa-chevron-left"></i> 对于 conda install -c conda-forge xx 的理解
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+<script src="/js/comments.js"></script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jrryzh</span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
