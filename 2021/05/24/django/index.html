@@ -28,7 +28,7 @@
 <meta property="og:description" content="激动人心的时刻来了，孩子又学django了。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-05-24T11:05:56.000Z">
-<meta property="article:modified_time" content="2021-05-24T14:14:52.034Z">
+<meta property="article:modified_time" content="2021-05-26T08:29:50.959Z">
 <meta property="article:author" content="Jrryzh">
 <meta property="article:tag" content="前端">
 <meta property="article:tag" content="可视化">
@@ -89,7 +89,7 @@
         <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
         <li class="menu-item menu-item-articles"><a href="/categories/articles" rel="section"><i class="fa fa-newspaper fa-fw"></i>文章</a></li>
         <li class="menu-item menu-item-thinkings"><a href="/categories/thinkings" rel="section"><i class="fa fa-lightbulb fa-fw"></i>日常感想</a></li>
-        <li class="menu-item menu-item-gallery"><a href="/categories/gallery/" rel="section"><i class="fa fa-images fa-fw"></i>照片</a></li>
+        <li class="menu-item menu-item-gallery"><a href="/gallery/" rel="section"><i class="fa fa-images fa-fw"></i>照片</a></li>
         <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
         <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
   </ul>
@@ -122,7 +122,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#PART-1-%E8%AF%B7%E6%B1%82%E4%B8%8E%E5%93%8D%E5%BA%94"><span class="nav-number">1.</span> <span class="nav-text">PART 1 请求与响应</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89django%E6%96%87%E4%BB%B6%E6%A1%86%E6%9E%B6"><span class="nav-number">1.0.1.</span> <span class="nav-text">（一）django文件框架</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E5%88%9B%E5%BB%BAAPP"><span class="nav-number">1.0.2.</span> <span class="nav-text">（二）创建APP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E7%BC%96%E5%86%99%E8%A7%86%E5%9B%BE"><span class="nav-number">1.0.3.</span> <span class="nav-text">（三）编写视图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E5%9B%9B%EF%BC%89path%EF%BC%88%EF%BC%89%E6%96%B9%E6%B3%95"><span class="nav-number">1.0.4.</span> <span class="nav-text">（四）path（）方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#route"><span class="nav-number">1.0.5.</span> <span class="nav-text">route</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#view"><span class="nav-number">1.0.6.</span> <span class="nav-text">view</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#kwargs"><span class="nav-number">1.0.7.</span> <span class="nav-text">kwargs</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#name"><span class="nav-number">1.0.8.</span> <span class="nav-text">name</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#PART-2-%E6%A8%A1%E5%9E%8B%E4%B8%8E%E5%90%8E%E5%8F%B0"><span class="nav-number">2.</span> <span class="nav-text">PART 2 模型与后台</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E6%95%B0%E6%8D%AE%E5%BA%93%E9%85%8D%E7%BD%AE"><span class="nav-number">2.0.1.</span> <span class="nav-text">（一）数据库配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E5%88%9B%E5%BB%BA%E6%A8%A1%E5%9E%8B"><span class="nav-number">2.0.2.</span> <span class="nav-text">（二）创建模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E5%90%AF%E7%94%A8%E6%A8%A1%E5%9E%8B"><span class="nav-number">2.0.3.</span> <span class="nav-text">（三）启用模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E5%9B%9B%EF%BC%89%E4%BD%93%E9%AA%8C%E6%A8%A1%E5%9E%8B%E8%87%AA%E5%B8%A6%E7%9A%84API"><span class="nav-number">2.0.4.</span> <span class="nav-text">（四）体验模型自带的API</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%BA%94%EF%BC%89admin%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%AB%99%E7%82%B9"><span class="nav-number">2.0.5.</span> <span class="nav-text">（五）admin后台管理站点</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E5%88%9B%E5%BB%BA%E7%AE%A1%E7%90%86%E5%91%98%E7%94%A8%E6%88%B7"><span class="nav-number">2.0.5.1.</span> <span class="nav-text">1. 创建管理员用户</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-%E5%90%AF%E5%8A%A8%E5%BC%80%E5%8F%91%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="nav-number">2.0.5.2.</span> <span class="nav-text">2. 启动开发服务器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-%E8%BF%9B%E5%85%A5%E7%AB%99%E7%82%B9"><span class="nav-number">2.0.5.3.</span> <span class="nav-text">3. 进入站点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-%E6%B3%A8%E5%86%8C%E6%8A%95%E7%A5%A8%E5%BA%94%E7%94%A8"><span class="nav-number">2.0.5.4.</span> <span class="nav-text">4. 注册投票应用</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Part-3%EF%BC%9A%E8%A7%86%E5%9B%BE%E5%92%8C%E6%A8%A1%E6%9D%BF"><span class="nav-number">3.</span> <span class="nav-text">Part 3：视图和模板</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E6%A6%82%E8%BF%B0"><span class="nav-number">3.0.1.</span> <span class="nav-text">（一）概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E7%BC%96%E5%86%99%E8%A7%86%E5%9B%BE"><span class="nav-number">3.0.2.</span> <span class="nav-text">（二）编写视图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E7%BC%96%E5%86%99%E8%83%BD%E5%AE%9E%E9%99%85%E5%B9%B2%E7%82%B9%E6%B4%BB%E7%9A%84%E8%A7%86%E5%9B%BE"><span class="nav-number">3.0.3.</span> <span class="nav-text">（三）编写能实际干点活的视图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E5%9B%9B%EF%BC%89%E8%BF%94%E5%9B%9E404%E9%94%99%E8%AF%AF"><span class="nav-number">3.0.4.</span> <span class="nav-text">（四）返回404错误</span></a></li></ol></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#PART-1-%E8%AF%B7%E6%B1%82%E4%B8%8E%E5%93%8D%E5%BA%94"><span class="nav-number">1.</span> <span class="nav-text">PART 1 请求与响应</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89django%E6%96%87%E4%BB%B6%E6%A1%86%E6%9E%B6"><span class="nav-number">1.0.1.</span> <span class="nav-text">（一）django文件框架</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E5%88%9B%E5%BB%BAAPP"><span class="nav-number">1.0.2.</span> <span class="nav-text">（二）创建APP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E7%BC%96%E5%86%99%E8%A7%86%E5%9B%BE"><span class="nav-number">1.0.3.</span> <span class="nav-text">（三）编写视图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E5%9B%9B%EF%BC%89path%EF%BC%88%EF%BC%89%E6%96%B9%E6%B3%95"><span class="nav-number">1.0.4.</span> <span class="nav-text">（四）path（）方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#route"><span class="nav-number">1.0.5.</span> <span class="nav-text">route</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#view"><span class="nav-number">1.0.6.</span> <span class="nav-text">view</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#kwargs"><span class="nav-number">1.0.7.</span> <span class="nav-text">kwargs</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#name"><span class="nav-number">1.0.8.</span> <span class="nav-text">name</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#PART-2-%E6%A8%A1%E5%9E%8B%E4%B8%8E%E5%90%8E%E5%8F%B0"><span class="nav-number">2.</span> <span class="nav-text">PART 2 模型与后台</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E6%95%B0%E6%8D%AE%E5%BA%93%E9%85%8D%E7%BD%AE"><span class="nav-number">2.0.1.</span> <span class="nav-text">（一）数据库配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E5%88%9B%E5%BB%BA%E6%A8%A1%E5%9E%8B"><span class="nav-number">2.0.2.</span> <span class="nav-text">（二）创建模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E5%90%AF%E7%94%A8%E6%A8%A1%E5%9E%8B"><span class="nav-number">2.0.3.</span> <span class="nav-text">（三）启用模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E5%9B%9B%EF%BC%89%E4%BD%93%E9%AA%8C%E6%A8%A1%E5%9E%8B%E8%87%AA%E5%B8%A6%E7%9A%84API"><span class="nav-number">2.0.4.</span> <span class="nav-text">（四）体验模型自带的API</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%BA%94%EF%BC%89admin%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%AB%99%E7%82%B9"><span class="nav-number">2.0.5.</span> <span class="nav-text">（五）admin后台管理站点</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E5%88%9B%E5%BB%BA%E7%AE%A1%E7%90%86%E5%91%98%E7%94%A8%E6%88%B7"><span class="nav-number">2.0.5.1.</span> <span class="nav-text">1. 创建管理员用户</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-%E5%90%AF%E5%8A%A8%E5%BC%80%E5%8F%91%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="nav-number">2.0.5.2.</span> <span class="nav-text">2. 启动开发服务器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-%E8%BF%9B%E5%85%A5%E7%AB%99%E7%82%B9"><span class="nav-number">2.0.5.3.</span> <span class="nav-text">3. 进入站点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-%E6%B3%A8%E5%86%8C%E6%8A%95%E7%A5%A8%E5%BA%94%E7%94%A8"><span class="nav-number">2.0.5.4.</span> <span class="nav-text">4. 注册投票应用</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Part-3%EF%BC%9A%E8%A7%86%E5%9B%BE%E5%92%8C%E6%A8%A1%E6%9D%BF"><span class="nav-number">3.</span> <span class="nav-text">Part 3：视图和模板</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E6%A6%82%E8%BF%B0"><span class="nav-number">3.0.1.</span> <span class="nav-text">（一）概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E7%BC%96%E5%86%99%E8%A7%86%E5%9B%BE"><span class="nav-number">3.0.2.</span> <span class="nav-text">（二）编写视图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E7%BC%96%E5%86%99%E8%83%BD%E5%AE%9E%E9%99%85%E5%B9%B2%E7%82%B9%E6%B4%BB%E7%9A%84%E8%A7%86%E5%9B%BE"><span class="nav-number">3.0.3.</span> <span class="nav-text">（三）编写能实际干点活的视图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E5%9B%9B%EF%BC%89%E8%BF%94%E5%9B%9E404%E9%94%99%E8%AF%AF"><span class="nav-number">3.0.4.</span> <span class="nav-text">（四）返回404错误</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%BA%94%EF%BC%89%E4%BD%BF%E7%94%A8%E6%A8%A1%E7%89%88%E7%B3%BB%E7%BB%9F"><span class="nav-number">3.0.5.</span> <span class="nav-text">（五）使用模版系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E5%85%AD%EF%BC%89%E5%88%A0%E9%99%A4%E6%A8%A1%E6%9D%BF%E4%B8%AD%E7%A1%AC%E7%BC%96%E7%A0%81%E7%9A%84URLs"><span class="nav-number">3.0.6.</span> <span class="nav-text">（六）删除模板中硬编码的URLs</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%B8%83%EF%BC%89URL-names%E7%9A%84%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4"><span class="nav-number">3.0.7.</span> <span class="nav-text">（七）URL names的命名空间</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Part-4%EF%BC%9A%E8%A1%A8%E5%8D%95%E5%92%8C%E7%B1%BB%E8%A7%86%E5%9B%BE"><span class="nav-number">4.</span> <span class="nav-text">Part 4：表单和类视图</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E8%A1%A8%E5%8D%95form"><span class="nav-number">4.0.1.</span> <span class="nav-text">（一）表单form</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -135,7 +135,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">13</span>
+          <span class="site-state-item-count">14</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -217,10 +217,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2021-05-24 19:05:56 / 修改时间：22:14:52" itemprop="dateCreated datePublished" datetime="2021-05-24T19:05:56+08:00">2021-05-24</time>
+      <time title="创建时间：2021-05-24 19:05:56" itemprop="dateCreated datePublished" datetime="2021-05-24T19:05:56+08:00">2021-05-24</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-05-26 16:29:50" itemprop="dateModified" datetime="2021-05-26T16:29:50+08:00">2021-05-26</time>
+      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -244,6 +250,8 @@
         <p>激动人心的时刻来了，孩子又学django了。</p>
 <span id="more"></span>
 
+<p>四部曲：路由、视图、模板、模型</p>
+<p>————————————————————————分割线————————————————————————————————</p>
 <h1 id="PART-1-请求与响应"><a href="#PART-1-请求与响应" class="headerlink" title="PART 1 请求与响应"></a>PART 1 请求与响应</h1><h3 id="（一）django文件框架"><a href="#（一）django文件框架" class="headerlink" title="（一）django文件框架"></a>（一）django文件框架</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">mysite/</span><br><span class="line">    manage.py</span><br><span class="line">    mysite/</span><br><span class="line">        __init__.py</span><br><span class="line">        settings.py</span><br><span class="line">        urls.py</span><br><span class="line">        asgi.py</span><br><span class="line">        wsgi.py</span><br></pre></td></tr></table></figure>
 
 <p>各文件和目录解释：</p>
@@ -273,7 +281,8 @@
 <p>建议：除了admin路由外，尽量给每个app设计自己独立的二级路由。</p>
 </li>
 </ol>
-<h3 id="（四）path（）方法"><a href="#（四）path（）方法" class="headerlink" title="（四）path（）方法"></a>（四）path（）方法</h3><p>一个路由配置模块就是一个urlpatterns列表，列表的每个元素都是一项path，每一项path都是以path()的形式存在。</p>
+<h3 id="（四）path（）方法"><a href="#（四）path（）方法" class="headerlink" title="（四）path（）方法"></a>（四）path（）方法</h3><p><code>path</code><strong>(<em><strong>route</strong></em>,</strong> <em>view**</em>,** <em>kwargs=None**</em>,** <em>name=None**</em>)**</p>
+<p>一个路由配置模块就是一个urlpatterns列表，列表的每个元素都是一项path，每一项path都是以path()的形式存在。</p>
 <p>path()方法可以接收4个参数，其中前2个是必须的：<code>route</code>和<code>view</code>，以及2个可选的参数：<code>kwargs</code>和<code>name</code>。</p>
 <h3 id="route"><a href="#route" class="headerlink" title="route"></a>route</h3><h3 id="view"><a href="#view" class="headerlink" title="view"></a>view</h3><h3 id="kwargs"><a href="#kwargs" class="headerlink" title="kwargs"></a>kwargs</h3><h3 id="name"><a href="#name" class="headerlink" title="name"></a>name</h3><h1 id="PART-2-模型与后台"><a href="#PART-2-模型与后台" class="headerlink" title="PART 2 模型与后台"></a>PART 2 模型与后台</h1><h3 id="（一）数据库配置"><a href="#（一）数据库配置" class="headerlink" title="（一）数据库配置"></a>（一）数据库配置</h3><p>默认情况，<code>INSTALLED_APPS</code>中会自动包含下列条目，它们都是Django自动生成的：</p>
 <ul>
@@ -319,7 +328,7 @@
 <h3 id="（五）admin后台管理站点"><a href="#（五）admin后台管理站点" class="headerlink" title="（五）admin后台管理站点"></a>（五）admin后台管理站点</h3><h4 id="1-创建管理员用户"><a href="#1-创建管理员用户" class="headerlink" title="1. 创建管理员用户"></a>1. <strong>创建管理员用户</strong></h4><h4 id="2-启动开发服务器"><a href="#2-启动开发服务器" class="headerlink" title="2. 启动开发服务器"></a>2. 启动开发服务器</h4><h4 id="3-进入站点"><a href="#3-进入站点" class="headerlink" title="3. 进入站点"></a>3. 进入站点</h4><h4 id="4-注册投票应用"><a href="#4-注册投票应用" class="headerlink" title="4. 注册投票应用"></a>4. 注册投票应用</h4><h1 id="Part-3：视图和模板"><a href="#Part-3：视图和模板" class="headerlink" title="Part 3：视图和模板"></a>Part 3：视图和模板</h1><h3 id="（一）概述"><a href="#（一）概述" class="headerlink" title="（一）概述"></a>（一）概述</h3><p>在Django中，网页和其它的一些内容都是通过视图来处理的。视图其实就是一个简单的Python函数（在基于类的视图中称为方法）。Django通过对比请求的URL地址来选择对应的视图，也就是路由。</p>
 <h3 id="（二）编写视图"><a href="#（二）编写视图" class="headerlink" title="（二）编写视图"></a>（二）编写视图</h3><ol>
 <li><p><code>detail(request=&lt;HttpRequest object&gt;, question_id=34)</code></p>
-<p>函数中的<code>question_id=’34’</code>参数，是由<code>&lt;int:question_id&gt;/</code>而来。使用尖括号“捕获”这部分 URL，且以关键字参数的形式发送给视图函数。上述字符串的<code>question_id</code>部分定义了将被用于区分匹配模式的变量名，而<code>int</code>则是一个转换器决定了应该以什么变量类型匹配这部分的 URL 路径。</p>
+<p>函数中的<code>question_id=’34’</code>参数，是由<code>path(&#39;&lt;int:question_id&gt;/&#39;, views.detail, name=&#39;detail&#39;)</code>中的<code>&lt;int:question_id&gt;/</code>而来。使用尖括号“捕获”这部分 URL，且以关键字参数的形式发送给视图函数。上述字符串的<code>question_id</code>部分定义了将被用于区分匹配模式的变量名，而<code>int</code>则是一个转换器决定了应该以什么变量类型匹配这部分的 URL 路径。</p>
 </li>
 </ol>
 <h3 id="（三）编写能实际干点活的视图"><a href="#（三）编写能实际干点活的视图" class="headerlink" title="（三）编写能实际干点活的视图"></a>（三）编写能实际干点活的视图</h3><ol>
@@ -333,7 +342,47 @@
 <li><p><strong>快捷方式：render()</strong></p>
 </li>
 </ol>
-<h3 id="（四）返回404错误"><a href="#（四）返回404错误" class="headerlink" title="（四）返回404错误"></a>（四）返回404错误</h3>
+<h3 id="（四）返回404错误"><a href="#（四）返回404错误" class="headerlink" title="（四）返回404错误"></a>（四）返回404错误</h3><p>get_object_or_404()</p>
+<p>get_list_or_404()</p>
+<p><code>用来替代</code>filter()<code>函数，当查询列表为空时弹出404错误</code></p>
+<h3 id="（五）使用模版系统"><a href="#（五）使用模版系统" class="headerlink" title="（五）使用模版系统"></a>（五）使用模版系统</h3><p>在模板系统中圆点<code>.</code>是万能的魔法师，你可以用它访问对象的属性。在例子<code>&#123;&#123; question.question_text &#125;&#125;</code>中，Django首先会在question对象中尝试查找一个字典，如果失败，则尝试查找属性，如果再失败，则尝试作为列表的索引进行查询。</p>
+<h3 id="（六）删除模板中硬编码的URLs"><a href="#（六）删除模板中硬编码的URLs" class="headerlink" title="（六）删除模板中硬编码的URLs"></a>（六）删除模板中硬编码的URLs</h3><p>在<code>polls/index.html</code>文件中，还有一部分硬编码存在，也就是<code>href</code>里的“/polls/”部分：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;/polls/&#123;&#123; question.id &#125;&#125;/&quot;</span>&gt;</span>&#123;&#123; question.question_text &#125;&#125;<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>它对于代码修改非常不利。设想如果你在urls.py文件里修改了路由表达式，那么你所有的模板中对这个url的引用都需要修改，这是无法接受的！</p>
+<p>我们前面给urls定义了一个name别名，可以用它来解决这个问题。具体代码如下：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;&#123;% url &#x27;detail&#x27; question.id %&#125;&quot;</span>&gt;</span>&#123;&#123; question.question_text &#125;&#125;<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="（七）URL-names的命名空间"><a href="#（七）URL-names的命名空间" class="headerlink" title="（七）URL names的命名空间"></a>（七）URL names的命名空间</h3><p>Django是如何区分这些app之间的URL name</p>
+<p>举个例子，<code>polls</code> 应用有 <code>detail</code> 视图，可能另一个博客应用也有同名的视图。<strong>Django 如何知道 <code>&#123;% url %&#125;</code> 标签到底对应哪一个应用的 URL 呢？</strong></p>
+<p><strong>答案是使用URLconf的命名空间。</strong>可以在polls/urls.py文件的开头部分，添加一个<code>app_name</code>的变量来指定该应用的命名空间：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app_name = &#x27;polls&#x27;   # 重点是这一行</span><br></pre></td></tr></table></figure>
+
+<p>将<code>polls/templates/polls/index.html</code>中的代码改为：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;li&gt;&lt;a href=&quot;&#123;% url &#x27;polls:detail&#x27; question.id %&#125;&quot;&gt;&#123;&#123; question.question_text &#125;&#125;&lt;/a&gt;&lt;/li&gt;</span><br></pre></td></tr></table></figure>
+
+<h1 id="Part-4：表单和类视图"><a href="#Part-4：表单和类视图" class="headerlink" title="Part 4：表单和类视图"></a>Part 4：表单和类视图</h1><h3 id="（一）表单form"><a href="#（一）表单form" class="headerlink" title="（一）表单form"></a>（一）表单form</h3><ol>
+<li>例子：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;h1&gt;&#123;&#123; question.question_text &#125;&#125;&lt;/h1&gt;</span><br><span class="line"></span><br><span class="line">&#123;% if error_message %&#125;&lt;p&gt;&lt;strong&gt;&#123;&#123; error_message &#125;&#125;&lt;/strong&gt;&lt;/p&gt;&#123;% endif %&#125;</span><br><span class="line"></span><br><span class="line">&lt;form action=&quot;&#123;% url &#x27;polls:vote&#x27; question.id %&#125;&quot; method=&quot;post&quot;&gt;</span><br><span class="line">&#123;% csrf_token %&#125;</span><br><span class="line">&#123;% for choice in question.choice_set.all %&#125;</span><br><span class="line">    &lt;input type=&quot;radio&quot; name=&quot;choice&quot; id=&quot;choice&#123;&#123; forloop.counter &#125;&#125;&quot; value=&quot;&#123;&#123; choice.id &#125;&#125;&quot;&gt;</span><br><span class="line">    &lt;label for=&quot;choice&#123;&#123; forloop.counter &#125;&#125;&quot;&gt;&#123;&#123; choice.choice_text &#125;&#125;&lt;/label&gt;&lt;br&gt;</span><br><span class="line">&#123;% endfor %&#125;</span><br><span class="line">&lt;input type=&quot;submit&quot; value=&quot;Vote&quot;&gt;</span><br><span class="line">&lt;/form&gt;</span><br></pre></td></tr></table></figure>
+
+<p>简要说明：</p>
+<ul>
+<li>上面的模板显示一系列单选按钮，按钮的值是选项的ID，按钮的名字是字符串”choice”。这意味着，当你选择了其中某个按钮，并提交表单，一个包含数据<code>choice=#</code>的POST请求将被发送到指定的url，<code>#</code>是被选择的选项的ID。这就是HTML表单的基本概念。</li>
+<li>如果你有一定的前端开发基础，那么form标签的action属性和method属性你应该很清楚它们的含义，action表示你要发送的目的url，method表示提交数据的方式，一般分post和get。</li>
+<li><code>forloop.counter</code>是Django模板系统专门提供的一个变量，用来表示你当前循环的次数，一般用来给循环项目添加有序数标。</li>
+<li>由于我们发送了一个POST请求，就必须考虑一个跨站请求伪造的安全问题，简称CSRF（具体含义请百度）。Django为你提供了一个简单的方法来避免这个困扰，那就是在form表单内添加一条<code>&#123;% csrf_token %&#125;</code>标签，标签名不可更改，固定格式，位置任意，只要是在form表单内。这个方法对form表单的提交方式方便好使，但如果是用ajax的方式提交数据，那么就不能用这个方法了。</li>
+</ul>
+<ol start="2">
+<li>有些新的东西，我们要解释一下：<ul>
+<li><code>request.POST</code>是一个类似字典的对象，允许你通过键名访问提交的数据。本例中，<code>request.POST[’choice’]</code>返回被选择选项的ID，并且值的类型永远是string字符串，哪怕它看起来像数字！同样的，你也可以用类似的手段获取GET请求发送过来的数据，一个道理。</li>
+<li><code>request.POST[’choice’]</code>有可能触发一个KeyError异常，如果你的POST数据里没有提供choice键值，在这种情况下，上面的代码会返回表单页面并给出错误提示。</li>
+<li>在选择计数器加一后，返回的是一个<code>HttpResponseRedirect</code>而不是先前我们常用的<code>HttpResponse</code>。<code>HttpResponseRedirect</code>需要一个参数：重定向的URL。这里有一个建议，当你成功处理POST数据后，应当保持一个良好的习惯，始终返回一个<code>HttpResponseRedirect</code>。这不仅仅是对Django而言，它是一个良好的WEB开发习惯。</li>
+<li>我们在上面<code>HttpResponseRedirect</code>的构造器中使用了一个<code>reverse()</code>函数。它能帮助我们避免在视图函数中硬编码URL。它首先需要一个我们在URLconf中指定的name，然后是传递的数据。例如<code>&#39;/polls/3/results/&#39;</code>，其中的3是某个<code>question.id</code>的值。重定向后将进入<code>polls:results</code>对应的视图，并将<code>question.id</code>传递给它。白话来讲，就是把活扔给另外一个路由对应的视图去干。</li>
+</ul>
+</li>
+</ol>
+
     </div>
 
     
