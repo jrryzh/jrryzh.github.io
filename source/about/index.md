@@ -16,7 +16,7 @@ alt="Portrait of Jinyu Zhang"
 <span class="eyebrow">About me</span>
 <h1 id="about-title">Jinyu Zhang<br><span lang="zh-CN">张晋瑜</span></h1>
 <p class="about-intro__role">
-Ph.D. Student · Embodied Intelligence
+Third-year Ph.D. Student · Embodied Intelligence
 </p>
 <p class="lead">
 My research focuses on embodied intelligence and robot learning, with
@@ -40,17 +40,17 @@ an emphasis on VLA models, pre-training, and manipulation.
 <article class="about-card">
 <h3>English</h3>
 <p>
-I am a first-year Ph.D. student in Embodied Intelligence at the
-<strong>Shanghai Innovation Institute (SII)</strong>. I received my
-undergraduate degree from <strong>Fudan University</strong>.
+I am a third-year Ph.D. student in Embodied Intelligence at the
+<strong>Shanghai Innovation Institute (SII)</strong>, having transferred
+from the master’s track to the Ph.D. program. I received my undergraduate
+degree from <strong>Fudan University</strong>.
 </p>
 <p>
 My research centers on embodied and spatial intelligence, especially
 data and pre-training for general-purpose manipulation. I previously
 interned at the <strong>Shanghai Artificial Intelligence Laboratory</strong>
 and am currently a research intern at the
-<strong>Agibot Embodied Intelligence Research Center</strong>, advised
-by Professor Jianlan Luo.
+<strong>Agibot Finch</strong>, advised by Professor Jianlan Luo.
 </p>
 <p>
 I am grateful to the mentors and collaborators who have supported my
@@ -60,10 +60,10 @@ research.
 <article class="about-card about-card--tint" lang="zh-CN">
 <h3>中文</h3>
 <p>
-你好！我叫<strong>张晋瑜</strong>，目前是上海创智学院（SII）具身智能方向的博士一年级学生，本科就读于复旦大学大数据学院。
+你好！我叫<strong>张晋瑜</strong>，目前是上海创智学院（SII）具身智能方向的博士三年级学生，由硕士阶段转入博士项目，本科就读于复旦大学大数据学院。
 </p>
 <p>
-我的研究聚焦于具身智能与空间智能，尤其关注面向通用操作智能的数据与预训练。我曾在上海人工智能实验室具身智能中心实习，目前在智元机器人具身研究中心实习，受罗剑岚老师指导。
+我的研究聚焦于具身智能与空间智能，尤其关注面向通用操作智能的数据与预训练。我曾在上海人工智能实验室具身智能中心实习，目前在 <strong>Agibot Finch</strong> 实习，受罗剑岚老师指导。
 </p>
 <p>
 感谢一路上给予我支持与启发的导师和合作者。
@@ -90,7 +90,7 @@ research.
 </div>
 <div class="fact-list__row">
 <dt>Experience</dt>
-<dd>Agibot Embodied Intelligence Research Center · Shanghai AI Laboratory</dd>
+<dd>Agibot Finch · Shanghai AI Laboratory</dd>
 </div>
 </dl>
 </div>
