@@ -9,8 +9,10 @@ mathjax: true
 ## Publications
 
 - **τ0-VLA: a Hierarchical Robot Foundation Model with World-Model-Guided Test-Time Computation**, 2026  
-  First authors: <u>Jinyu Zhang</u> and Yi Liu.  
+  τ0-VLA Team · <u>Jinyu Zhang</u> (First Author)  
   [[Project](https://tau0-vla.github.io/)] [[Paper](https://tau0-vla.github.io/tau0-vla.pdf)] [[Code](https://github.com/sii-research/tau-0-vla)] [[Model Weights](https://huggingface.co/sii-research/tau-0-vla)]
+
+  <img src="/assets/images/publications/tau0-vla-teaser.webp" alt="τ0-VLA overview showing pretraining data, world-model-guided test-time computation, low-level policy, and robot capabilities" width="800">
 
 - **Unified Embodied VLM Reasoning with Robotic Action via Autoregressive Discretized Pre-training**, 2026  
   Yi Liu, Sukai Wang, Dafeng Wei, Xiaowei Cai, Linqing Zhong, Jiange Yang, Guanghui Ren, <u>Jinyu Zhang</u>, Maoqing Yao, Chuankang Li, Xindong He, Liliang Chen, Jianlan Luo.  
