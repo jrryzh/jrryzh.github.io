@@ -11,8 +11,8 @@ mathjax: false
 <span class="eyebrow">Academic</span>
 <h1>Research &amp; Publications</h1>
 <p class="lead">
-Building general-purpose manipulation intelligence through embodied
-pre-training, spatial reasoning, and complete robotic systems.
+Selected work on embodied intelligence, robot learning, spatial
+reasoning, and manipulation.
 </p>
 </div>
 <div class="academic-count" aria-label="Four selected publications">

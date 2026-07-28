@@ -19,9 +19,8 @@ alt="Portrait of Jinyu Zhang"
 Ph.D. Student · Embodied Intelligence
 </p>
 <p class="lead">
-I work on embodied pre-training and manipulation intelligence, while
-staying curious about the full stack—from robot hardware and sensing to
-learning and control.
+My research focuses on embodied intelligence and robot learning, with
+an emphasis on VLA models, pre-training, and manipulation.
 </p>
 <div class="button-row">
 <a class="button primary" href="mailto:zhangjinyu25@sii.edu.cn">Get in touch</a>
@@ -34,7 +33,7 @@ learning and control.
 <div class="section-heading">
 <div>
 <span class="eyebrow">Biography</span>
-<h2 id="bio-title">A little more context</h2>
+<h2 id="bio-title">Biography</h2>
 </div>
 </div>
 <div class="about-grid">
@@ -54,8 +53,8 @@ and am currently a research intern at the
 by Professor Jianlan Luo.
 </p>
 <p>
-I am grateful to the mentors and collaborators who continue to shape
-my research journey.
+I am grateful to the mentors and collaborators who have supported my
+research.
 </p>
 </article>
 <article class="about-card about-card--tint" lang="zh-CN">
@@ -67,7 +66,7 @@ my research journey.
 我的研究聚焦于具身智能与空间智能，尤其关注面向通用操作智能的数据与预训练。我曾在上海人工智能实验室具身智能中心实习，目前在智元机器人具身研究中心实习，受罗剑岚老师指导。
 </p>
 <p>
-我由衷感谢一路上给予我支持与启发的导师和合作者，也期待继续探索具身智能中尚未被解决的问题。
+感谢一路上给予我支持与启发的导师和合作者。
 </p>
 </article>
 </div>
@@ -98,8 +97,8 @@ my research journey.
 </section>
 <section class="contact-strip" aria-labelledby="contact-title">
 <div>
-<h2 id="contact-title">Let’s talk research.</h2>
-<p>Questions, ideas, and collaborations are always welcome.</p>
+<h2 id="contact-title">Contact</h2>
+<p>For research questions and collaboration.</p>
 </div>
 <a class="button primary" href="mailto:zhangjinyu25@sii.edu.cn">
 zhangjinyu25@sii.edu.cn

@@ -12,8 +12,7 @@ mathjax: false
 <span class="eyebrow">Embodied Intelligence · Robotics</span>
 <h1 id="home-title">Jinyu Zhang</h1>
 <p class="lead">
-I study <strong>embodied pre-training</strong>—VLA or otherwise—to build
-general-purpose <strong>manipulation intelligence</strong>.
+Currently working on Embodied Intelligence and VLA.
 </p>
 <p class="home-hero__meta">
 Ph.D. Student at Shanghai Innovation Institute &amp; Fudan University
@@ -35,11 +34,11 @@ alt="Illustration of a researcher working with a robotic arm"
 <div class="section-heading">
 <div>
 <span class="eyebrow">Research focus</span>
-<h2 id="research-focus-title">Learning to act in the physical world</h2>
+<h2 id="research-focus-title">Research interests</h2>
 </div>
 <p>
-My work spans learning algorithms and complete robotic systems, with
-manipulation as the common thread.
+My current work focuses on robot learning and system-level questions in
+embodied intelligence.
 </p>
 </div>
 <div class="research-grid">
@@ -47,25 +46,25 @@ manipulation as the common thread.
 <span class="research-card__number">01 · PRE-TRAINING</span>
 <h3>Embodied Pre-training</h3>
 <p>
-I explore data, objectives, architectures, and inference strategies
-for scalable manipulation intelligence—beyond any single VLA
-formulation.
+Studying data, objectives, architectures, and inference for embodied
+models, with an emphasis on scalable robot learning.
 </p>
 </article>
 <article class="research-card">
 <span class="research-card__number">02 · SYSTEMS</span>
 <h3>Embodied Systems</h3>
 <p>
-I am interested in embodied systems from the hardware up. Their
-interplay of sensing, mechanics, learning, and control still holds
-many fundamental questions and tractable, high-impact opportunities.
+Interested in how hardware, sensing, learning, and control interact in
+real robotic systems, and in the practical problems that emerge across
+this stack.
 </p>
 </article>
 </div>
 </section>
 <section class="home-note" aria-label="Current research">
 <div>
-<h2>Currently building τ0-VLA</h2>
+<span class="home-note__label">Current project</span>
+<h2>τ0-VLA</h2>
 <p>
 A hierarchical robot foundation model with world-model-guided
 test-time computation.
