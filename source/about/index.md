@@ -1,23 +1,108 @@
 ---
-title: about
+title: About
 date: 2025-08-20 00:55:02
+comments: false
+toc: false
 ---
-
-<p>
-  <img src="/assets/images/about/IMG_0573.JPG" alt="selfie" width="200"
-       style="float: right; margin: 0 0 100px 30px;">
-Hi, I’m <strong>Jinyu Zhang (张晋瑜)</strong>, a <strong>first-year Ph.D. student</strong> in <strong>Embodied Intelligence</strong> at <strong>Shanghai Innovation Institute (SII)</strong>. I received my undergraduate degree from <strong>Fudan University</strong>. My research interests focus on <strong>embodied and spatial intelligence</strong>, with an emphasis on <strong>data and pretraining for Vision–Language–Action (VLA) models</strong>. I previously interned at the <strong>Shanghai Artificial Intelligence Laboratory</strong> and am currently a research intern at the <strong>Agibot Embodied Intelligence Research Center</strong>, advised by <strong>Professor Jianlan Luo</strong>.
-In my research journey, I am deeply grateful for the invaluable support and guidance provided by my collaborators and mentors. I look forward to continuing to explore new possibilities in this field!
-
-<br>
-
-你好！我叫 <strong>张晋瑜（Jinyu Zhang）</strong>，目前是 <strong>上海创智学院（SII）具身智能方向的博士一年级学生</strong>。本科期间我就读于复旦大学大数据学院，之后在硕士阶段转入博士项目继续深造。  
-我的研究兴趣主要集中在具身智能和空间智能，尤其关注VLA的数据和预训练。我曾经在上海人工智能实验室具身智能中心实习。目前，我在 <strong>智元机器人具身研究中心</strong>实习，受罗剑岚老师指导。  
-在我的科研旅程中，我非常感谢合作者和导师们给予的宝贵支持。期待未来继续在这一领域探索更多可能！  
-  
-
+<main class="profile-page profile-about">
+<section class="about-hero" aria-labelledby="about-title">
+<div class="about-portrait">
+<img
+src="/assets/images/about/IMG_0573.JPG"
+alt="Portrait of Jinyu Zhang"
+>
+</div>
+<div class="about-intro">
+<span class="eyebrow">About me</span>
+<h1 id="about-title">Jinyu Zhang<br><span lang="zh-CN">张晋瑜</span></h1>
+<p class="about-intro__role">
+Ph.D. Student · Embodied Intelligence
 </p>
-
-## Contact
-
-[zhangjinyu25@sii.edu.cn](mailto:zhangjinyu25@sii.edu.cn)
+<p class="lead">
+I work on embodied pre-training and manipulation intelligence, while
+staying curious about the full stack—from robot hardware and sensing to
+learning and control.
+</p>
+<div class="button-row">
+<a class="button primary" href="mailto:zhangjinyu25@sii.edu.cn">Get in touch</a>
+<a class="button" href="https://github.com/jrryzh">GitHub ↗</a>
+<a class="button" href="https://huggingface.co/J3rr1">Hugging Face ↗</a>
+</div>
+</div>
+</section>
+<section aria-labelledby="bio-title">
+<div class="section-heading">
+<div>
+<span class="eyebrow">Biography</span>
+<h2 id="bio-title">A little more context</h2>
+</div>
+</div>
+<div class="about-grid">
+<article class="about-card">
+<h3>English</h3>
+<p>
+I am a first-year Ph.D. student in Embodied Intelligence at the
+<strong>Shanghai Innovation Institute (SII)</strong>. I received my
+undergraduate degree from <strong>Fudan University</strong>.
+</p>
+<p>
+My research centers on embodied and spatial intelligence, especially
+data and pre-training for general-purpose manipulation. I previously
+interned at the <strong>Shanghai Artificial Intelligence Laboratory</strong>
+and am currently a research intern at the
+<strong>Agibot Embodied Intelligence Research Center</strong>, advised
+by Professor Jianlan Luo.
+</p>
+<p>
+I am grateful to the mentors and collaborators who continue to shape
+my research journey.
+</p>
+</article>
+<article class="about-card about-card--tint" lang="zh-CN">
+<h3>中文</h3>
+<p>
+你好！我叫<strong>张晋瑜</strong>，目前是上海创智学院（SII）具身智能方向的博士一年级学生，本科就读于复旦大学大数据学院。
+</p>
+<p>
+我的研究聚焦于具身智能与空间智能，尤其关注面向通用操作智能的数据与预训练。我曾在上海人工智能实验室具身智能中心实习，目前在智元机器人具身研究中心实习，受罗剑岚老师指导。
+</p>
+<p>
+我由衷感谢一路上给予我支持与启发的导师和合作者，也期待继续探索具身智能中尚未被解决的问题。
+</p>
+</article>
+</div>
+</section>
+<section aria-labelledby="snapshot-title">
+<div class="section-heading">
+<div>
+<span class="eyebrow">Snapshot</span>
+<h2 id="snapshot-title">Research profile</h2>
+</div>
+</div>
+<div class="about-card">
+<dl class="fact-list">
+<div class="fact-list__row">
+<dt>Affiliation</dt>
+<dd>Shanghai Innovation Institute · Fudan University</dd>
+</div>
+<div class="fact-list__row">
+<dt>Focus</dt>
+<dd>Embodied pre-training · Manipulation intelligence · Embodied systems</dd>
+</div>
+<div class="fact-list__row">
+<dt>Experience</dt>
+<dd>Agibot Embodied Intelligence Research Center · Shanghai AI Laboratory</dd>
+</div>
+</dl>
+</div>
+</section>
+<section class="contact-strip" aria-labelledby="contact-title">
+<div>
+<h2 id="contact-title">Let’s talk research.</h2>
+<p>Questions, ideas, and collaborations are always welcome.</p>
+</div>
+<a class="button primary" href="mailto:zhangjinyu25@sii.edu.cn">
+zhangjinyu25@sii.edu.cn
+</a>
+</section>
+</main>
