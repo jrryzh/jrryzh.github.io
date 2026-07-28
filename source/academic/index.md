@@ -15,8 +15,8 @@ Building general-purpose manipulation intelligence through embodied
 pre-training, spatial reasoning, and complete robotic systems.
 </p>
 </div>
-<div class="academic-count" aria-label="Five selected publications">
-<strong>05</strong>
+<div class="academic-count" aria-label="Four selected publications">
+<strong>04</strong>
 <span>Selected works</span>
 </div>
 </header>
@@ -109,30 +109,6 @@ year   = {2025},
 booktitle = {arXiv}
 }</code></pre>
 </details>
-</div>
-</article>
-<article class="publication-card">
-<div class="publication-card__visual">
-<img
-src="/assets/images/publications/beyond6d-teaser.png"
-alt="Beyond Templates object pose, size, and shape estimation overview"
-loading="lazy"
->
-</div>
-<div class="publication-card__body">
-<div class="publication-card__meta">
-<span class="tag">2025</span>
-<span class="tag highlight">Under Review</span>
-</div>
-<h3>Beyond “Templates”: Category-Agnostic Object Pose, Size, and Shape Estimation from a Single View</h3>
-<p class="publication-card__authors">
-<strong>Jinyu Zhang</strong>, Haitao Lin, Jiashu Hou, Xiangyang Xue,
-Yanwei Fu
-</p>
-<div class="link-row">
-<a class="button primary" href="https://arxiv.org/abs/2510.11687">Paper ↗</a>
-<span class="button" aria-label="Code coming soon">Code soon</span>
-</div>
 </div>
 </article>
 <article class="publication-card">
