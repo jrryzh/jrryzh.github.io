@@ -89,10 +89,12 @@ loading="lazy"
 <div class="publication-card__body">
 <div class="publication-card__meta">
 <span class="tag">2025</span>
-<span class="tag">Foundation Model</span>
+<span class="tag highlight">Core Contributor</span>
 </div>
 <h3>InternVLA-M1: A Spatially Grounded Foundation Model for Generalist Robot Policy</h3>
-<p class="publication-card__authors">InternVLA-M1 Contributors</p>
+<p class="publication-card__authors">
+InternVLA-M1 Contributors · <strong>Jinyu Zhang</strong> (Core Contributor)
+</p>
 <div class="link-row">
 <a class="button primary" href="https://internrobotics.github.io/internvla-m1.github.io/">Project ↗</a>
 <a class="button" href="https://github.com/InternRobotics/InternVLA-M1">Code ↗</a>
