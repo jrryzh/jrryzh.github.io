@@ -56,25 +56,23 @@ alt="τ0-VLA overview: pre-training, world-model-guided test-time computation, p
 <article class="publication-card">
 <div class="publication-card__visual">
 <img
-src="/assets/images/publications/genie-reasoner.jpg"
-alt="Unified embodied VLM reasoning and robotic action overview"
+src="/assets/images/publications/beyond6d-teaser.png"
+alt="Category-agnostic object pose, size, and shape estimation overview"
 loading="lazy"
 >
 </div>
 <div class="publication-card__body">
 <div class="publication-card__meta">
-<span class="tag">2026</span>
-<span class="tag">FACT</span>
+<span class="tag">2025</span>
+<span class="tag highlight">First Author</span>
 </div>
-<h3>Unified Embodied VLM Reasoning with Robotic Action via Autoregressive Discretized Pre-training</h3>
+<h3>Beyond ‘Templates’: Category-Agnostic Object Pose, Size, and Shape Estimation from a Single View</h3>
 <p class="publication-card__authors">
-Yi Liu, Sukai Wang, Dafeng Wei, Xiaowei Cai, Linqing Zhong, Jiange
-Yang, Guanghui Ren, <strong>Jinyu Zhang</strong>, Maoqing Yao,
-Chuankang Li, Xindong He, Liliang Chen, Jianlan Luo
+<strong>Jinyu Zhang</strong>, Haitao Lin, Jiashu Hou, Xiangyang Xue,
+Yanwei Fu
 </p>
 <div class="link-row">
-<a class="button primary" href="https://finch.agibot.com/research/uni-fact">Project ↗</a>
-<a class="button" href="https://arxiv.org/abs/2512.24125">Paper ↗</a>
+<a class="button primary" href="https://arxiv.org/abs/2510.11687">Paper ↗</a>
 </div>
 </div>
 </article>
