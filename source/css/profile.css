@@ -34,9 +34,9 @@
 
 #header #logo {
   float: none;
-  width: 38px;
-  height: 38px;
-  margin-right: 0.85rem;
+  width: 40px;
+  height: 40px;
+  margin-right: 0.9rem;
   border-radius: 0;
   filter: none;
 }
@@ -46,7 +46,7 @@
   margin: 0;
   color: var(--profile-ink);
   font-family: var(--profile-font);
-  font-size: 1.12rem;
+  font-size: 1.2rem;
   font-weight: 720;
   letter-spacing: -0.01em;
   line-height: 1.25;
@@ -58,7 +58,7 @@
   margin-left: auto;
   color: var(--profile-muted);
   font-family: var(--profile-font);
-  font-size: 0.94rem;
+  font-size: 1.02rem;
   font-weight: 650;
 }
 
@@ -76,10 +76,10 @@
 
 #header #nav ul a {
   display: inline-flex;
-  min-height: 2.45rem;
+  min-height: 2.6rem;
   align-items: center;
   margin: 0;
-  padding: 0.52rem 0.78rem;
+  padding: 0.56rem 0.84rem;
   border-radius: 0.45rem;
   color: var(--profile-muted);
 }
@@ -380,6 +380,10 @@ article.post > .content {
   padding: 1rem 0;
 }
 
+.home-hero__copy h1 {
+  font-size: clamp(2.05rem, 4vw, 2.95rem);
+}
+
 .home-hero__copy .lead {
   max-width: 39rem;
 }
@@ -524,7 +528,7 @@ article.post > .content {
 }
 
 .about-intro h1 {
-  font-size: clamp(2.05rem, 4vw, 2.9rem);
+  font-size: clamp(1.9rem, 3.5vw, 2.6rem);
 }
 
 .about-intro__role {
@@ -953,13 +957,13 @@ article.post > .content {
 
   #header #title h1 {
     display: block;
-    font-size: 1.03rem;
+    font-size: 1.1rem;
   }
 
   #header #logo {
-    width: 32px;
-    height: 32px;
-    margin-right: 0.65rem;
+    width: 34px;
+    height: 34px;
+    margin-right: 0.7rem;
   }
 
   #header #nav ul li.icon {
@@ -968,8 +972,8 @@ article.post > .content {
   }
 
   #header #nav ul li.icon a {
-    min-width: 2.25rem;
-    min-height: 2.25rem;
+    min-width: 2.5rem;
+    min-height: 2.5rem;
     justify-content: center;
     padding: 0;
   }
