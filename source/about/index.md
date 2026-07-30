@@ -14,9 +14,13 @@ alt="Portrait of Jinyu Zhang"
 </div>
 <div class="about-intro">
 <span class="eyebrow">About me</span>
-<h1 id="about-title">Jinyu Zhang<br><span lang="zh-CN">张晋瑜</span></h1>
+<p class="about-intro__identity">
+<span>Jinyu Zhang</span>
+<span lang="zh-CN">张晋瑜</span>
+</p>
+<h1 id="about-title">Embodied Intelligence and Robot Learning</h1>
 <p class="about-intro__role">
-Third-year Ph.D. Student · Embodied Intelligence
+Third-year Ph.D. Student · Shanghai Innovation Institute &amp; Fudan University
 </p>
 <p class="lead">
 My research focuses on embodied intelligence and robot learning, with

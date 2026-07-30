@@ -527,15 +527,40 @@ article.post > .content {
   padding: clamp(1.65rem, 3.2vw, 2.35rem);
 }
 
+.about-intro__identity {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.55rem 0.75rem;
+  margin: 0 0 0.9rem;
+  color: var(--profile-ink);
+  font-size: 0.94rem;
+  font-weight: 720;
+  letter-spacing: 0.01em;
+  line-height: 1.35;
+}
+
+.about-intro__identity span[lang] {
+  padding-left: 0.75rem;
+  border-left: 1px solid var(--profile-line);
+  color: var(--profile-muted);
+  font-size: 0.9em;
+  font-weight: 650;
+}
+
 .about-intro h1 {
-  font-size: clamp(1.9rem, 3.5vw, 2.6rem);
+  max-width: 32rem;
+  margin-bottom: 0.75rem;
+  font-size: clamp(1.7rem, 2.8vw, 2.25rem);
+  line-height: 1.12;
 }
 
 .about-intro__role {
-  margin: -0.2rem 0 1.15rem;
-  color: var(--profile-accent-dark);
-  font-size: 1rem;
-  font-weight: 750;
+  margin: 0 0 1rem;
+  color: var(--profile-muted);
+  font-size: 0.88rem;
+  font-weight: 680;
+  line-height: 1.5;
 }
 
 .about-intro .button-row {
