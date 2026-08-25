@@ -17,7 +17,7 @@
   position: relative;
   z-index: 100;
   display: flex;
-  width: min(64rem, calc(100vw - 2rem));
+  width: min(50rem, calc(100vw - 2rem));
   align-items: center;
   margin: 0 0 2.75rem 50%;
   padding-bottom: 1rem;
@@ -33,12 +33,7 @@
 }
 
 #header #logo {
-  float: none;
-  width: 40px;
-  height: 40px;
-  margin-right: 0.9rem;
-  border-radius: 0;
-  filter: none;
+  display: none;
 }
 
 #header #title h1 {
@@ -46,8 +41,8 @@
   margin: 0;
   color: var(--profile-ink);
   font-family: var(--profile-font);
-  font-size: 1.2rem;
-  font-weight: 720;
+  font-size: 1.1rem;
+  font-weight: 700;
   letter-spacing: -0.01em;
   line-height: 1.25;
   text-overflow: ellipsis;
@@ -58,14 +53,16 @@
   margin-left: auto;
   color: var(--profile-muted);
   font-family: var(--profile-font);
-  font-size: 1.02rem;
-  font-weight: 650;
+  font-size: 0.875rem;
+  font-weight: 400;
 }
 
 #header #nav ul {
   display: flex;
   align-items: center;
-  gap: 0.3rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.45rem 1.1rem;
   line-height: 1;
 }
 
@@ -76,19 +73,20 @@
 
 #header #nav ul a {
   display: inline-flex;
-  min-height: 2.6rem;
+  min-height: 0;
   align-items: center;
   margin: 0;
-  padding: 0.56rem 0.84rem;
-  border-radius: 0.45rem;
+  padding: 0;
+  border-radius: 0;
   color: var(--profile-muted);
 }
 
 #header #nav ul a:hover,
 #header #nav ul a:focus-visible {
-  background: var(--profile-wash);
+  background: transparent;
   color: var(--profile-ink);
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
 }
 
 #archive {
@@ -194,8 +192,92 @@ article.post > .content {
   font-family: var(--profile-font);
 }
 
+#header-post,
+#footer-post,
+#footer-post-container {
+  display: none !important;
+}
+
+article.post.h-entry {
+  color: var(--profile-ink);
+  font-family: var(--profile-font);
+  font-size: 1rem;
+  line-height: 1.76;
+}
+
+article.post.h-entry > header {
+  margin-bottom: 2.6rem;
+  padding-bottom: 1.35rem;
+  border-bottom: 1px solid var(--profile-line);
+}
+
+article.post.h-entry > header .posttitle {
+  margin-bottom: 0.7rem;
+  color: var(--profile-ink);
+  font-family: var(--profile-font);
+  font-size: clamp(2rem, 5vw, 2.85rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.08;
+}
+
+article.post.h-entry > header .meta,
+article.post.h-entry > header .meta * {
+  color: var(--profile-muted);
+  font-size: 0.78rem;
+}
+
+article.post.h-entry > header .author {
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+article.post.h-entry > .content {
+  color: var(--profile-ink);
+  font-size: 1rem;
+  line-height: 1.76;
+}
+
+article.post.h-entry > .content p {
+  margin: 0 0 1.25rem;
+  text-align: left;
+}
+
+article.post.h-entry > .content h2,
+article.post.h-entry > .content h3,
+article.post.h-entry > .content h4 {
+  color: var(--profile-ink);
+  font-family: var(--profile-font);
+  letter-spacing: -0.025em;
+}
+
+article.post.h-entry > .content h2 {
+  margin-top: 2.8rem;
+  font-size: 1.65rem;
+}
+
+article.post.h-entry > .content h2::before {
+  content: none;
+}
+
+article.post.h-entry > .content h3 {
+  margin-top: 2rem;
+  font-size: 1.25rem;
+}
+
+article.post.h-entry > .content a {
+  color: #315f8f;
+  text-decoration-color: rgba(49, 95, 143, 0.45);
+  text-underline-offset: 0.16em;
+}
+
+article.post.h-entry > .content img {
+  margin: 1.8rem auto;
+}
+
 #footer {
-  width: min(64rem, calc(100vw - 2rem));
+  width: min(50rem, calc(100vw - 2rem));
   margin-left: 50%;
   border-top-color: var(--profile-line);
   color: var(--profile-muted);
@@ -1048,6 +1130,34 @@ article.post > .content {
 
   #archive .post-item .meta {
     font-size: 0.72rem;
+  }
+
+  #header.unified-post-header {
+    display: block;
+  }
+
+  #header.unified-post-header > .u-url {
+    display: inline-block;
+    margin-bottom: 0.85rem;
+  }
+
+  #header.unified-post-header #title {
+    margin: 0;
+  }
+
+  #header.unified-post-header #nav {
+    margin-left: 0;
+  }
+
+  #header.unified-post-header #nav ul {
+    justify-content: flex-start;
+    gap: 0.55rem 0.9rem;
+  }
+
+  #header.unified-post-header #nav ul li {
+    display: inline-flex;
+    padding: 0;
+    font-size: 0.78rem;
   }
 }
 
