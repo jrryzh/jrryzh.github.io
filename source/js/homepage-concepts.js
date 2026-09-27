@@ -6,7 +6,6 @@
       name: 'Jinyu Zhang',
       role: 'Third-year Ph.D. student in Embodied Intelligence',
       affiliation: 'Shanghai Innovation Institute (SII) · Fudan University',
-      current: 'Research intern at Agibot Finch, advised by Professor Jianlan Luo.',
       bio: 'I work on embodied intelligence and robot learning, with a focus on VLA models, scalable pre-training, and general-purpose manipulation.',
       photo: '/assets/home/jinyu-academic.JPG'
     },
@@ -46,11 +45,22 @@
         ]
       },
       {
-        year: '2025',
+        year: 'NeurIPS 2026',
         status: 'First Author',
-        title: 'Beyond “Templates”: Category-Agnostic Object Pose, Size, and Shape Estimation from a Single View',
-        authors: ['Jinyu Zhang', 'Haitao Lin', 'Jiashu Hou', 'Xiangyang Xue', 'Yanwei Fu'],
-        links: [['Paper', 'https://arxiv.org/abs/2510.11687']]
+        title: 'F2G-Pose: Geometry-Aware Foundation Feature Lifting for Direct RGB-D Category-Level Object Pose Estimation',
+        authors: [
+          { name: 'Jinyu Zhang', href: 'https://openreview.net/profile?id=~Jinyu_Zhang2' },
+          { name: 'Haitao Lin', href: 'https://openreview.net/profile?id=~Haitao_Lin3' },
+          { name: 'Jiashu Hou', href: 'https://openreview.net/profile?id=~Jiashu_Hou1' },
+          { name: 'Xiangyang Xue', href: 'https://openreview.net/profile?id=~Xiangyang_Xue1' },
+          { name: 'Yanwei Fu', href: 'https://openreview.net/profile?id=~Yanwei_Fu2' }
+        ],
+        links: [
+          ['Project', 'https://jrryzh.github.io/F2G-Pose/'],
+          ['Paper', 'https://jrryzh.github.io/F2G-Pose/paper.pdf'],
+          ['Code', 'https://github.com/jrryzh/F2G-Pose'],
+          ['Model', 'https://huggingface.co/J3rr1/F2G-Pose']
+        ]
       },
       {
         year: '2025',
@@ -215,26 +225,16 @@
       </section>`;
   }
 
-  function renderNow() {
-    return `
-      <section id="now" class="page-section now-section" aria-labelledby="now-title">
-        <header class="section-header">
-          <p class="section-label">Now</p>
-          <h2 id="now-title">Current</h2>
-        </header>
-        <div class="now-copy">
-          <p>${escapeHtml(content.person.current)}</p>
-          <p>Currently exploring data, pre-training, and test-time computation for general-purpose robot policies.</p>
-        </div>
-      </section>`;
-  }
-
   function renderAuthors(item) {
     const rendered = item.authors.map((author) => {
-      const name = escapeHtml(author);
-      return author === content.person.name
-        ? `<strong class="author-self">${name}</strong>`
+      const value = typeof author === 'string' ? { name: author } : author;
+      const name = escapeHtml(value.name);
+      const linked = value.href
+        ? `<a class="author-link" href="${escapeHtml(value.href)}" target="_blank" rel="noopener">${name}</a>`
         : name;
+      return value.name === content.person.name
+        ? `<strong class="author-self">${linked}</strong>`
+        : linked;
     });
 
     if (item.team) {
@@ -470,7 +470,6 @@
         ${renderNav(variant)}
         <main>
           ${renderHero()}
-          ${renderNow()}
           ${renderResearch()}
           ${renderPublications(variant.density)}
           ${singleSections}
