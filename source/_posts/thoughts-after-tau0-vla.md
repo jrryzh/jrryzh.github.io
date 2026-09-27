@@ -1,5 +1,5 @@
 ---
-title: Thoughts after Tau0-VLA
+title: "Thoughts after Tau0-VLA 【Chinese】"
 date: 2026-07-30 20:23:54
 tags:
     - writing

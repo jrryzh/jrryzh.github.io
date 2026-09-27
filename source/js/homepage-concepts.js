@@ -119,47 +119,47 @@
     writing: [
       {
         date: 'Jul 2026',
-        title: 'Thoughts after Tau0-VLA',
+        title: 'Thoughts after Tau0-VLA 【Chinese】',
         href: '/2026/07/30/thoughts-after-tau0-vla/'
       },
       {
         date: 'May 2026',
-        title: 'April–May research notes',
+        title: 'April–May Research Notes 【Chinese】',
         href: '/2026/05/17/April-May-think/'
       },
       {
         date: 'Jan 2026',
-        title: 'VLA reflections & the PI–Sequoia podcast',
+        title: 'VLA Reflections & the PI–Sequoia Podcast 【Chinese】',
         href: '/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/'
       },
       {
         date: 'Nov 2025',
-        title: '最近',
+        title: 'Recent Reflections 【Chinese】',
         href: '/2025/11/01/%E6%9C%80%E8%BF%91/'
       },
       {
         date: 'Oct 2025',
-        title: '记一次深入解决问题的经历',
+        title: 'Solving a Problem in Depth 【Chinese】',
         href: '/2025/10/06/%E8%AE%B0%E4%B8%80%E6%AC%A1%E6%B7%B1%E5%85%A5%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98%E7%9A%84%E7%BB%8F%E5%8E%86/'
       },
       {
         date: 'Sep 2025',
-        title: '效率脑科学',
+        title: 'Your Brain at Work 【Chinese】',
         href: '/2025/09/29/%E6%95%88%E7%8E%87%E8%84%91%E7%A7%91%E5%AD%A6/'
       },
       {
         date: 'Sep 2025',
-        title: 'gpt for paper',
+        title: 'GPT for Paper Writing 【Chinese】',
         href: '/2025/09/24/gpt-for-paper/'
       },
       {
         date: 'Sep 2025',
-        title: 'vibe coding',
+        title: 'Vibe Coding 【Chinese】',
         href: '/2025/09/23/vibe-coding/'
       },
       {
         date: 'Sep 2025',
-        title: '浦美奥赛展',
+        title: 'Musée d’Orsay at the Museum of Art Pudong 【Chinese】',
         href: '/2025/09/22/%E5%A5%A5%E8%B5%9B%E5%B1%95/'
       }
     ]

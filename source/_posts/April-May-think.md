@@ -1,5 +1,5 @@
 ---
-title: April_May_think
+title: "April–May Research Notes 【Chinese】"
 date: 2026-05-17 17:51:50
 tags:
     - writing

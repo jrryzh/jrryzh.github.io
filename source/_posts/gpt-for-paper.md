@@ -1,5 +1,5 @@
 ---
-title: gpt for paper
+title: "GPT for Paper Writing 【Chinese】"
 date: 2025-09-24 02:39:58
 tags:
     - writing

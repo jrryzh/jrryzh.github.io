@@ -1,5 +1,5 @@
 ---
-title: vibe coding
+title: "Vibe Coding 【Chinese】"
 date: 2025-09-23 19:05:40
 tags:
     - coding

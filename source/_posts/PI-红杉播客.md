@@ -1,5 +1,5 @@
 ---
-title: VLA 思考 & PI 红杉播客
+title: "VLA Reflections & the PI–Sequoia Podcast 【Chinese】"
 date: 2026-01-12 23:58:45
 tags:
     - writing
