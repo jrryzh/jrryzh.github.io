@@ -1,5 +1,5 @@
 ---
-title: "VLA Reflections & the PI–Sequoia Podcast 【Chinese】"
+title: "VLA Reflections & the PI–Sequoia Podcast [中文]"
 date: 2026-01-12 23:58:45
 tags:
     - writing
