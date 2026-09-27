@@ -285,6 +285,18 @@ figure {
   font-weight: 750;
 }
 
+.authors .author-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.authors .author-link:hover,
+.authors .author-link:focus-visible {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
+
 .author-note {
   margin: -1px 0 8px;
   color: var(--muted);
