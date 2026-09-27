@@ -8,13 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
     <meta name="description" content="好久没写东西了，理清下思路。写一下现阶段对VLA的看法，以及关于PI上周和红杉录制的播客记一点想法。 VLM-based VLA有什么缺陷吗？我不知道。当最初VLA在几个小task上不work时，我质疑过；但当看到随着数据scaleup后开始出现越来越多的somehow泛化的行为后，我感觉如果后撤一步看过去，假如large scale data&amp;training下众生平等的话，VLM-ba">
 <meta property="og:type" content="article">
-<meta property="og:title" content="VLA Reflections &amp; the PI–Sequoia Podcast 【Chinese】">
+<meta property="og:title" content="VLA Reflections &amp; the PI–Sequoia Podcast [中文]">
 <meta property="og:url" content="https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/index.html">
 <meta property="og:site_name" content="Jinyu Zhang">
 <meta property="og:description" content="好久没写东西了，理清下思路。写一下现阶段对VLA的看法，以及关于PI上周和红杉录制的播客记一点想法。 VLM-based VLA有什么缺陷吗？我不知道。当最初VLA在几个小task上不work时，我质疑过；但当看到随着数据scaleup后开始出现越来越多的somehow泛化的行为后，我感觉如果后撤一步看过去，假如large scale data&amp;training下众生平等的话，VLM-ba">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2026-01-12T15:58:45.000Z">
-<meta property="article:modified_time" content="2026-09-27T04:25:20.655Z">
+<meta property="article:modified_time" content="2026-09-27T08:13:28.161Z">
 <meta property="article:author" content="Jrryzh">
 <meta property="article:tag" content="writing">
 <meta name="twitter:card" content="summary">
@@ -37,7 +37,7 @@
       
     
     <!-- title -->
-    <title>VLA Reflections &amp; the PI–Sequoia Podcast 【Chinese】</title>
+    <title>VLA Reflections &amp; the PI–Sequoia Podcast [中文]</title>
     <!-- async scripts -->
     <!-- Google Analytics -->
 
@@ -103,16 +103,16 @@
     <div id="share" style="display: none">
       <ul>
   <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/&text=VLA Reflections &amp; the PI–Sequoia Podcast 【Chinese】"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/&title=VLA Reflections &amp; the PI–Sequoia Podcast 【Chinese】"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/&is_video=false&description=VLA Reflections &amp; the PI–Sequoia Podcast 【Chinese】"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=VLA Reflections &amp; the PI–Sequoia Podcast 【Chinese】&body=Check out this article: https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/&title=VLA Reflections &amp; the PI–Sequoia Podcast 【Chinese】"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/&title=VLA Reflections &amp; the PI–Sequoia Podcast 【Chinese】"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/&title=VLA Reflections &amp; the PI–Sequoia Podcast 【Chinese】"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/&title=VLA Reflections &amp; the PI–Sequoia Podcast 【Chinese】"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/&name=VLA Reflections &amp; the PI–Sequoia Podcast 【Chinese】&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/&t=VLA Reflections &amp; the PI–Sequoia Podcast 【Chinese】"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/&text=VLA Reflections &amp; the PI–Sequoia Podcast [中文]"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/&title=VLA Reflections &amp; the PI–Sequoia Podcast [中文]"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/&is_video=false&description=VLA Reflections &amp; the PI–Sequoia Podcast [中文]"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=VLA Reflections &amp; the PI–Sequoia Podcast [中文]&body=Check out this article: https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/&title=VLA Reflections &amp; the PI–Sequoia Podcast [中文]"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/&title=VLA Reflections &amp; the PI–Sequoia Podcast [中文]"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/&title=VLA Reflections &amp; the PI–Sequoia Podcast [中文]"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/&title=VLA Reflections &amp; the PI–Sequoia Podcast [中文]"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/&name=VLA Reflections &amp; the PI–Sequoia Podcast [中文]&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/&t=VLA Reflections &amp; the PI–Sequoia Podcast [中文]"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
@@ -128,7 +128,7 @@
   <header>
     
     <h1 class="posttitle p-name" itemprop="name headline">
-        VLA Reflections &amp; the PI–Sequoia Podcast 【Chinese】
+        VLA Reflections &amp; the PI–Sequoia Podcast [中文]
     </h1>
 
 
@@ -203,16 +203,16 @@
     <div id="share-footer" style="display: none">
       <ul>
   <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/&text=VLA Reflections &amp; the PI–Sequoia Podcast 【Chinese】"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/&title=VLA Reflections &amp; the PI–Sequoia Podcast 【Chinese】"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/&is_video=false&description=VLA Reflections &amp; the PI–Sequoia Podcast 【Chinese】"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=VLA Reflections &amp; the PI–Sequoia Podcast 【Chinese】&body=Check out this article: https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/&title=VLA Reflections &amp; the PI–Sequoia Podcast 【Chinese】"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/&title=VLA Reflections &amp; the PI–Sequoia Podcast 【Chinese】"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/&title=VLA Reflections &amp; the PI–Sequoia Podcast 【Chinese】"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/&title=VLA Reflections &amp; the PI–Sequoia Podcast 【Chinese】"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/&name=VLA Reflections &amp; the PI–Sequoia Podcast 【Chinese】&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/&t=VLA Reflections &amp; the PI–Sequoia Podcast 【Chinese】"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/&text=VLA Reflections &amp; the PI–Sequoia Podcast [中文]"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/&title=VLA Reflections &amp; the PI–Sequoia Podcast [中文]"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/&is_video=false&description=VLA Reflections &amp; the PI–Sequoia Podcast [中文]"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=VLA Reflections &amp; the PI–Sequoia Podcast [中文]&body=Check out this article: https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/&title=VLA Reflections &amp; the PI–Sequoia Podcast [中文]"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/&title=VLA Reflections &amp; the PI–Sequoia Podcast [中文]"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/&title=VLA Reflections &amp; the PI–Sequoia Podcast [中文]"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/&title=VLA Reflections &amp; the PI–Sequoia Podcast [中文]"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/&name=VLA Reflections &amp; the PI–Sequoia Podcast [中文]&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://jrryzh.github.io/2026/01/12/PI-%E7%BA%A2%E6%9D%89%E6%92%AD%E5%AE%A2/&t=VLA Reflections &amp; the PI–Sequoia Podcast [中文]"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
