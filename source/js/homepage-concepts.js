@@ -37,6 +37,11 @@
         team: 'τ0-VLA Team',
         authors: ['Jinyu Zhang'],
         authorRole: 'First Author',
+        authorNote: 'Authors are listed alphabetically.',
+        authorNoteLink: {
+          label: 'See Appendix A (Author Contributions)',
+          href: 'https://tau0-vla.github.io/tau0-vla.pdf#page=14'
+        },
         links: [
           ['Project', 'https://tau0-vla.github.io/'],
           ['Paper', 'https://tau0-vla.github.io/tau0-vla.pdf'],
@@ -247,6 +252,9 @@
   function renderPublication(item) {
     const links = item.links.map(([label, href]) => anchor(label, href, true)).join('<span aria-hidden="true">·</span>');
     const meta = [item.year, item.type, item.status].filter(Boolean);
+    const authorNoteLink = item.authorNoteLink
+      ? ` ${anchor(item.authorNoteLink.label, item.authorNoteLink.href, true)}`
+      : '';
     return `
       <article class="publication-item">
         <div class="publication-meta">
@@ -255,7 +263,7 @@
         <div class="publication-copy">
           <h3>${escapeHtml(item.title)}</h3>
           <p class="authors">${renderAuthors(item)}</p>
-          ${item.authorNote ? `<p class="author-note">${escapeHtml(item.authorNote)}</p>` : ''}
+          ${item.authorNote ? `<p class="author-note">${escapeHtml(item.authorNote)}${authorNoteLink}</p>` : ''}
           <div class="resource-links">${links}</div>
         </div>
       </article>`;
