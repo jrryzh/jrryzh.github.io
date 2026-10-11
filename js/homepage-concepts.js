@@ -31,8 +31,7 @@
     publications: [
       {
         year: '2026',
-        type: 'Technical Report',
-        status: 'First Author',
+        venue: 'Technical Report',
         title: 'τ0-VLA: A Hierarchical Robot Foundation Model with World-Model-Guided Test-Time Computation',
         team: 'τ0-VLA Team',
         authors: ['Jinyu Zhang'],
@@ -50,8 +49,8 @@
         ]
       },
       {
-        year: 'NeurIPS 2026',
-        status: 'First Author',
+        year: '2026',
+        venue: 'NeurIPS',
         title: 'F2G-Pose: Geometry-Aware Foundation Feature Lifting for Direct RGB-D Category-Level Object Pose Estimation',
         authors: [
           { name: 'Jinyu Zhang', href: 'https://openreview.net/profile?id=~Jinyu_Zhang2' },
@@ -69,8 +68,7 @@
       },
       {
         year: '2025',
-        type: 'Technical Report',
-        status: 'Core Contributor',
+        venue: 'Technical Report',
         title: 'InternVLA-M1: A Spatially Guided Vision-Language-Action Framework for Generalist Robot Policy',
         team: 'InternVLA-M1 Team',
         authors: ['Jinyu Zhang'],
@@ -81,8 +79,8 @@
         ]
       },
       {
-        year: 'IROS 2024',
-        status: 'Oral Pitch',
+        year: '2024',
+        venue: 'IROS',
         title: 'LAC-Net: Linear-Fusion Attention-Guided Convolutional Network for Accurate Robotic Grasping Under Occlusion',
         authors: [
           'Jinyu Zhang', 'Yongchong Gu', 'Jianxiong Gao', 'Haitao Lin',
@@ -237,13 +235,16 @@
       const linked = value.href
         ? `<a class="author-link" href="${escapeHtml(value.href)}" target="_blank" rel="noopener">${name}</a>`
         : name;
+      const role = item.authorRole
+        ? ` <span class="author-role">(${escapeHtml(item.authorRole)})</span>`
+        : '';
       return value.name === content.person.name
-        ? `<strong class="author-self">${linked}</strong>`
+        ? `<strong class="author-self">${linked}</strong>${role}`
         : linked;
     });
 
     if (item.team) {
-      return `${escapeHtml(item.team)} <span aria-hidden="true">·</span> ${rendered[0]} (${escapeHtml(item.authorRole)})`;
+      return `${escapeHtml(item.team)} <span aria-hidden="true">·</span> ${rendered[0]}`;
     }
 
     return rendered.join(', ');
@@ -251,14 +252,14 @@
 
   function renderPublication(item) {
     const links = item.links.map(([label, href]) => anchor(label, href, true)).join('<span aria-hidden="true">·</span>');
-    const meta = [item.year, item.type, item.status].filter(Boolean);
     const authorNoteLink = item.authorNoteLink
       ? ` ${anchor(item.authorNoteLink.label, item.authorNoteLink.href, true)}`
       : '';
     return `
       <article class="publication-item">
         <div class="publication-meta">
-          ${meta.map((value) => `<span>${escapeHtml(value)}</span>`).join('')}
+          <span>${escapeHtml(item.year)}</span>
+          <span>${escapeHtml(item.venue)}</span>
         </div>
         <div class="publication-copy">
           <h3>${escapeHtml(item.title)}</h3>
@@ -339,16 +340,16 @@
           <section class="career-group" aria-labelledby="education-title">
             <h3 id="education-title">Education</h3>
             <ol class="career-list">
-              <li><article><div><h4>Shanghai Innovation Institute × Fudan University</h4><span>Sep 2025–Present</span></div><p>Ph.D. Student in Embodied Intelligence</p></article></li>
-              <li><article><div><h4>Fudan University, School of Data Science</h4><span>Sep 2023–Jun 2025</span></div><p>Master’s Student</p></article></li>
-              <li><article><div><h4>Fudan University, School of Data Science</h4><span>Sep 2018–Jun 2022</span></div><p>Undergraduate</p></article></li>
+              <li><article><div><h4>Shanghai Innovation Institute × Fudan University</h4><span>Sep 2025–Present</span></div><p>Ph.D. Student in Embodied Intelligence</p><p class="career-supervision">Supervised by ${anchor('Prof. Jianlan Luo', 'https://jianlanluo.github.io/', true)}</p></article></li>
+              <li><article><div><h4>Fudan University, School of Data Science</h4><span>Sep 2023–Jun 2025</span></div><p>Master’s Student</p><p class="career-supervision">Supervised by ${anchor('Prof. Yanwei Fu', 'https://yanweifu.github.io/', true)}</p></article></li>
+              <li><article><div><h4>Fudan University, School of Data Science</h4><span>Sep 2018–Jun 2022</span></div><p>Undergraduate</p><p class="career-supervision">Supervised by ${anchor('Prof. Siming Chen', 'https://datascience.fudan.edu.cn/97/4b/c13398a694091/page.psp', true)}</p></article></li>
             </ol>
           </section>
           <section class="career-group" aria-labelledby="work-experience-title">
             <h3 id="work-experience-title">Experience</h3>
             <ol class="career-list">
-              <li><article><div><h4>Agibot Finch</h4><span>Nov 2025–Aug 2026</span></div><p>Research Intern</p></article></li>
-              <li><article><div><h4>Shanghai Artificial Intelligence Laboratory</h4><span>Mar 2025–Nov 2025</span></div><p>Research Intern · Embodied Intelligence Center</p></article></li>
+              <li><article><div><h4>Agibot Finch</h4><span>Nov 2025–Aug 2026</span></div><p>Research Intern</p><p class="career-supervision">Mentored by ${anchor('Prof. Jianlan Luo', 'https://jianlanluo.github.io/', true)}</p></article></li>
+              <li><article><div><h4>Shanghai Artificial Intelligence Laboratory</h4><span>Mar 2025–Nov 2025</span></div><p>Research Intern · Embodied Intelligence Center</p><p class="career-supervision">Mentored by ${anchor('Dr. Yilun Chen', 'https://yilunchen.com/about/', true)}</p></article></li>
             </ol>
           </section>
         </div>
@@ -359,12 +360,12 @@
     const production = document.body.dataset.production === 'true';
     const links = production
       ? [
-          ['Home', '#top'], ['Research', '#research'], ['Publications', '#publications'],
+          ['Home', '#top'], ['Publications', '#publications'], ['Research', '#research'],
           ['Open source', '#opensource'], ['Experience', '#experience'], ['Writing', '#writing']
         ]
       : variant.density === 'single'
       ? [
-          ['Home', '#top'], ['Research', '#research'], ['Publications', '#publications'],
+          ['Home', '#top'], ['Publications', '#publications'], ['Research', '#research'],
           ['Open source', '#opensource'], ['Writing', '#writing'], ['About', '/preview/about/']
         ]
       : [
@@ -478,8 +479,8 @@
         ${renderNav(variant)}
         <main>
           ${renderHero()}
-          ${renderResearch()}
           ${renderPublications(variant.density)}
+          ${renderResearch()}
           ${singleSections}
           ${renderExperience()}
           ${renderWriting()}
